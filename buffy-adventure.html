@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="apple-mobile-web-app-title" content="Buffy"/>
+  <meta name="theme-color" content="#0D0522"/>
+  <title>Buffy Adventure</title>
+  <link rel="apple-touch-icon" href="data:image/png;base64,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"/>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    html,body{background:#0D0522;min-height:100vh;overflow-x:hidden;}
+    #root{min-height:100vh;}
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script>
+var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+const { useState, useEffect, useRef, useCallback } = React;
+const C = {
+  bg: "#0D0522",
+  surface: "#180840",
+  card: "#221060",
+  border: "#3D1B8C",
+  pink: "#FF6B9D",
+  purple: "#C77DFF",
+  yellow: "#FFD93D",
+  green: "#6BCB77",
+  blue: "#74B9FF",
+  orange: "#FF9F43",
+  red: "#FF4757",
+  white: "#FFFFFF",
+  soft: "#C4A8E8",
+  gold: "#FFD700",
+  teal: "#00E5CC",
+  dark: "#08021A"
+};
+const SK = { default: "#FF6B9D", purple: "#C77DFF", blue: "#74B9FF", green: "#6BCB77", gold: "#FFD700" };
+const BS = { background: "#221060", border: "1px solid #3D1B8C", color: "#fff", borderRadius: 10, padding: "8px 14px", cursor: "pointer", fontWeight: 700, fontSize: 14 };
+const sfx = {
+  _p(f, d, t = "sine", v = 0.18) {
+    try {
+      const c = new (window.AudioContext || window.webkitAudioContext)(), o = c.createOscillator(), g = c.createGain();
+      o.connect(g);
+      g.connect(c.destination);
+      o.type = t;
+      o.frequency.value = f;
+      g.gain.setValueAtTime(v, c.currentTime);
+      g.gain.exponentialRampToValueAtTime(1e-3, c.currentTime + d);
+      o.start();
+      o.stop(c.currentTime + d);
+    } catch (e) {
+    }
+  },
+  vib(p) {
+    try {
+      if (navigator.vibrate) navigator.vibrate(p);
+    } catch (e) {
+    }
+  },
+  collect() {
+    this._p(880, 0.08);
+    this.vib(25);
+  },
+  miss() {
+    this._p(200, 0.18, "sawtooth", 0.1);
+    this.vib([40, 20, 40]);
+  },
+  complete() {
+    [523, 659, 784, 1047].forEach((f, i) => setTimeout(() => this._p(f, 0.18), i * 110));
+    this.vib([80, 40, 80, 40, 160]);
+  },
+  fail() {
+    this._p(180, 0.4, "sawtooth", 0.12);
+    this.vib([100, 50, 100]);
+  },
+  buy() {
+    this._p(660, 0.13);
+    this.vib(40);
+  },
+  flip() {
+    this._p(440, 0.07);
+  },
+  secret() {
+    [440, 554, 659, 880, 1047].forEach((f, i) => setTimeout(() => this._p(f, 0.15), i * 90));
+    this.vib([50, 30, 50, 30, 50, 30, 200]);
+  },
+  streak() {
+    [660, 880, 1100].forEach((f, i) => setTimeout(() => this._p(f, 0.18), i * 100));
+    this.vib([60, 30, 60, 30, 120]);
+  },
+  daily() {
+    [523, 659, 784, 1047, 1318].forEach((f, i) => setTimeout(() => this._p(f, 0.2), i * 100));
+    this.vib([100, 50, 200]);
+  }
+};
+const MSGS = {
+  msg1: { title: "Perch\xE9 Ho Scelto Te \u{1F49C}", body: `Rebecca,
+
+Ho scelto te perch\xE9 sei diversa dalle altre.
+Non \xE8 una cosa che si spiega \u2014 hai qualcosa, pi\xF9 di qualcosa, che ti rende unica. Qualcosa che non ho trovato da nessun'altra parte e che non trover\xF2 mai.
+
+Sei tu e basta.
+E questo mi basta.
+
+\u2014 Nino \u{1F49C}` },
+  msg2: { title: "Il Mio Momento Preferito \u{1F319}", body: `Rebecca,
+
+Sai qual \xE8 il mio momento preferito con te?
+
+Tutti.
+
+Non ho un momento speciale da scegliere, perch\xE9 ogni momento in cui sto con te diventa automaticamente il migliore della giornata. Solo vederti mi cambia la giornata. Solo vederti mi cambia la vita.
+
+\u2014 Nino \u{1F319}` },
+  msg3: { title: "Il Mio Sogno Con Te \u{1F31F}", body: `Rebecca,
+
+Il mio sogno con te lo conosci gi\xE0.
+
+Una famiglia. Una casa. Svegliarci insieme ogni mattina. Costruire qualcosa che sia solo nostro.
+
+Non \xE8 cambiato niente \u2014 quel sogno \xE8 ancora l\xEC, e sei ancora tu la protagonista.
+
+\u2014 Nino \u{1F31F}` },
+  msg4: { title: "Voglio Ritornare Con Te \u{1F64F}", body: `Rebecca,
+
+Non ti scrivo per trovare scuse.
+Ti scrivo per dirti una cosa semplice:
+
+Voglio ritornare con te.
+
+Non perch\xE9 ho paura di stare solo, ma perch\xE9 con te sto bene. E senza di te manca qualcosa che non so spiegare \u2014 ma che sento ogni giorno.
+
+\u2014 Nino \u{1F49C}` },
+  msg5: { title: "\u{1F305} La Tua Sorpresa", body: `Rebecca,
+
+Se sei arrivata fin qui, vuol dire che ci credi ancora anche tu.
+
+Questa avventura l'ho creata solo per te, perch\xE9 sei unica e inimitabile \u2014 e meriti qualcosa che lo dimostri davvero.
+
+La tua sorpresa \xE8 questa:
+
+\u{1F305} Ti vengo a prendere sotto casa.
+Ti porto a vedere l'alba al mare.
+Solo tu e io.
+
+Come si deve.
+
+Ti aspetto.
+\u2014 Il tuo Nino \u{1F339}` }
+};
+const WSTORIES = [
+  { w: 1, title: "L'Inizio di Tutto \u{1F338}", text: 'Nel giardino dei cuori, una Buffy speciale girava tra i fiori.\nNino la guardava da lontano pensando:\n\n"Quella l\xEC \xE8 diversa dalle altre.\nHa qualcosa. Pi\xF9 di qualcosa."\n\nE aveva ragione.' },
+  { w: 2, title: "Sotto le Stelle \u2B50", text: "Sotto un cielo pieno di stelle, Nino e Rebecca stavano seduti vicini.\nLui non disse niente di speciale.\nLei neanche.\n\nMa fu comunque il momento migliore della giornata.\nCome sempre, quando lei c'\xE8." },
+  { w: 3, title: "Nell'Oceano dei Sogni \u{1F30A}", text: `Nuotando nell'oceano dei sogni, Nino guardava Rebecca ridere.
+
+Pensava:
+"Solo vederla cos\xEC mi sistema tutto.
+Non so come fa, ma lo fa."
+
+Lo fa ancora oggi.` },
+  { w: 4, title: "Il Momento del Solletico \u{1F33F}", text: 'Nella foresta magica, Nino le fece il solletico.\n\nRebecca scapp\xF2 ridendo:\n"CORRO CHIAMAMI GIAGUAROOO!! \u{1F406}"\n\nNino rise cos\xEC forte da cadere.\n\nQuei momenti stupidi sono i migliori del mondo.' },
+  { w: 5, title: "Mister Stempia \u{1F319}", text: 'Nella notte incantata, Nino la chiam\xF2 sottovoce:\n\n"Eeehi... Mister Stempia..."\n\nLei si gir\xF2 con quella faccia.\nQuela faccia l\xEC.\n\nSolo lei sa fare quella faccia.\nSolo lei \xE8 cos\xEC. Inimitabile.' },
+  { w: 6, title: "Attraverso il Fuoco \u{1F30B}", text: "Anche attraverso il vulcano, anche quando era difficile, erano insieme.\n\nNino cap\xEC una cosa semplice:\ngli ostacoli sembrano pi\xF9 piccoli quando lei c'\xE8 accanto.\n\nSempre." },
+  { w: 7, title: "La Promessa \u{1F3F0}", text: `Nel castello delle stelle, Nino fece una promessa silenziosa:
+
+"Una famiglia.
+Una casa.
+Insieme."
+
+Non l'ha mai dimenticata.
+Non la dimenticher\xE0.` },
+  { w: 8, title: "Corri, Giaguaro \u{1F308}", text: `Sull'arcobaleno correvano insieme.
+
+"Sei diversa da tutte le altre" le disse Nino.
+"Lo so" rispose lei.
+
+E rise.
+Solo lei ride cos\xEC.
+Nino impazzisce per quella risata.` },
+  { w: 9, title: "Un Nuovo Inizio \u{1F305}", text: `All'alba del nuovo inizio, Nino prese un respiro.
+
+Voleva dirle tante cose.
+Ne disse una sola:
+
+"Voglio ritornare con te."
+
+Semplice. Vero. Dal cuore.` },
+  { w: 10, title: "Il Cuore del Mondo \u{1F49C}", text: "Sei arrivata alla fine.\n\nHai completato tutte le 100 missioni.\nHai letto le sue lettere.\nHai vissuto la sua storia.\n\nOra c'\xE8 solo una cosa rimasta:\n\n\u{1F305} La sorpresa.\n\nVai nel negozio e apri l'ultima lettera.\nTi aspetta." }
+];
+const TROPH = [
+  { id: "first", emoji: "\u{1F31F}", name: "Primo Passo", desc: "Completa la tua prima missione", check: (c) => Object.keys(c).length >= 1 },
+  { id: "stars5", emoji: "\u2B50", name: "Stellina", desc: "3 stelle in 5 missioni", check: (c) => Object.values(c).filter((m) => m.stars === 3).length >= 5 },
+  { id: "stars20", emoji: "\u{1F320}", name: "Super Stellina", desc: "3 stelle in 20 missioni", check: (c) => Object.values(c).filter((m) => m.stars === 3).length >= 20 },
+  { id: "streak5", emoji: "\u{1F525}", name: "In Fiamma", desc: "5 vittorie di fila senza perdere", check: (_, __, ___, ____, streak) => streak >= 5 },
+  { id: "streak10", emoji: "\u{1F4A5}", name: "Inarrestabile", desc: "10 vittorie consecutive", check: (_, __, ___, ____, streak) => streak >= 10 },
+  { id: "half", emoji: "\u{1F3AF}", name: "A Met\xE0 Strada", desc: "Completa 50 missioni", check: (c) => Object.keys(c).length >= 50 },
+  { id: "all100", emoji: "\u{1F3C6}", name: "Campionessa!", desc: "Completa tutte le 100 missioni", check: (c) => Object.keys(c).length >= 100 },
+  { id: "rich", emoji: "\u{1F4B0}", name: "Ricca sfondada", desc: "Accumula 5000 monete totali", check: (_, __, coins) => coins >= 5e3 },
+  { id: "shopper", emoji: "\u{1F6CD}\uFE0F", name: "Shopping Queen", desc: "Acquista 5 oggetti nel negozio", check: (_, owned) => owned.length >= 6 },
+  { id: "golden", emoji: "\u2728", name: "Buffy Dorata", desc: "Sblocca la skin dorata", check: (_, owned) => owned.includes("skin_gold") },
+  { id: "letters", emoji: "\u{1F48C}", name: "Lettrice d'Amore", desc: "Leggi tutte le lettere di Nino", check: (_, owned) => ["msg_1", "msg_2", "msg_3", "msg_4", "msg_5"].every((m) => owned.includes(m)) },
+  { id: "giaguaro", emoji: "\u{1F406}", name: "GIAGUARO!", desc: "Codice segreto sbloccato \u{1F406}", check: (_, __, ___, secret) => secret }
+];
+const SHOP = [
+  { id: "skin_default", cat: "skin", name: "Buffy Rosa", price: 0, emoji: "\u{1F338}", skinKey: "default", desc: "La tua compagna!" },
+  { id: "skin_purple", cat: "skin", name: "Buffy Viola", price: 600, emoji: "\u{1F49C}", skinKey: "purple", desc: "Misteriosa e magica" },
+  { id: "skin_blue", cat: "skin", name: "Buffy Azzurra", price: 1e3, emoji: "\u{1F499}", skinKey: "blue", desc: "Fresca come il cielo" },
+  { id: "skin_green", cat: "skin", name: "Buffy Smeraldo", price: 1800, emoji: "\u{1F49A}", skinKey: "green", desc: "Forte come la foresta" },
+  { id: "skin_gold", cat: "skin", name: "Buffy Dorata", price: 5e3, emoji: "\u2B50", skinKey: "gold", desc: "Rara e preziosa come te" },
+  { id: "acc_bow", cat: "acc", name: "Fiocco Rosa", price: 400, emoji: "\u{1F380}", accKey: "bow", desc: "Dolce e romantico" },
+  { id: "acc_crown", cat: "acc", name: "Coroncina", price: 1200, emoji: "\u{1F451}", accKey: "crown", desc: "Sei una regina" },
+  { id: "acc_wings", cat: "acc", name: "Ali d'Angelo", price: 2500, emoji: "\u{1FABD}", accKey: "wings", desc: "Vola alto!" },
+  { id: "acc_star", cat: "acc", name: "Stellina Magica", price: 1500, emoji: "\u2728", accKey: "star", desc: "Brilla sempre" },
+  { id: "pu_time", cat: "pu", name: "+10 Secondi", price: 200, emoji: "\u23F0", desc: "Tempo extra per la missione", uses: 5 },
+  { id: "pu_shield", cat: "pu", name: "Scudo Magico", price: 350, emoji: "\u{1F6E1}\uFE0F", desc: "Una vita extra", uses: 3 },
+  { id: "pu_2x", cat: "pu", name: "Monete x2", price: 500, emoji: "\u{1F4B0}", desc: "Raddoppia le monete vinte", uses: 3 },
+  { id: "msg_1", cat: "msg", name: "Perch\xE9 Ho Scelto Te", price: 1e3, emoji: "\u{1F48C}", msgKey: "msg1", desc: "Una lettera segreta da Nino" },
+  { id: "msg_2", cat: "msg", name: "Il Mio Momento Preferito", price: 2e3, emoji: "\u{1F4D6}", msgKey: "msg2", desc: "Una lettera segreta da Nino" },
+  { id: "msg_3", cat: "msg", name: "Il Mio Sogno Con Te", price: 3500, emoji: "\u{1F319}", msgKey: "msg3", desc: "Una lettera segreta da Nino" },
+  { id: "msg_4", cat: "msg", name: "Voglio Ritornare Con Te", price: 6e3, emoji: "\u{1F64F}", msgKey: "msg4", desc: "Una lettera segreta da Nino" },
+  { id: "msg_5", cat: "msg", name: "\u{1F305} La Tua Sorpresa", price: 12e3, emoji: "\u{1F381}", msgKey: "msg5", desc: "La sorpresa pi\xF9 speciale di tutte" }
+];
+const WORLDS = [
+  { id: 1, name: "Il Giardino dei Cuori", emoji: "\u{1F338}", color: "#FF6B9D", unlock: 0 },
+  { id: 2, name: "Il Cielo Stellato", emoji: "\u2B50", color: "#FFD93D", unlock: 6 },
+  { id: 3, name: "L'Oceano dei Sogni", emoji: "\u{1F30A}", color: "#74B9FF", unlock: 16 },
+  { id: 4, name: "La Foresta Magica", emoji: "\u{1F33F}", color: "#6BCB77", unlock: 26 },
+  { id: 5, name: "La Notte Incantata", emoji: "\u{1F319}", color: "#C77DFF", unlock: 36 },
+  { id: 6, name: "Il Vulcano di Fuoco", emoji: "\u{1F30B}", color: "#FF9F43", unlock: 46 },
+  { id: 7, name: "Il Castello delle Stelle", emoji: "\u{1F3F0}", color: "#FFD700", unlock: 56 },
+  { id: 8, name: "Il Ponte dell'Arcobaleno", emoji: "\u{1F308}", color: "#FF6B9D", unlock: 66 },
+  { id: 9, name: "L'Alba del Nuovo Inizio", emoji: "\u{1F305}", color: "#FF9F43", unlock: 76 },
+  { id: 10, name: "Il Cuore del Mondo", emoji: "\u{1F49C}", color: "#FF6B9D", unlock: 86 }
+];
+const M = [
+  // MONDO 1 - Tutorial dolce
+  { id: 1, w: 1, name: "Il Primo Battito", type: "heart", emoji: "\u{1F49C}", story: "I cuori danzano nell'aria... raccoglili prima che svaniscano!", coins: 80, diff: 1, p: { target: 8, time: 35, speed: 1.3, lightning: false } },
+  { id: 2, w: 1, name: "Fiori nel Vento", type: "bubble", emoji: "\u{1F338}", story: "I petali si trasformano in bolle magiche. Scoppia quelle colorate!", coins: 90, diff: 1, p: { target: 10, time: 30, speed: 1 } },
+  { id: 3, w: 1, name: "Ricordi Nascosti", type: "memory", emoji: "\u{1F33C}", story: "Le farfalle nascondono segreti. Trova tutte le coppie!", coins: 100, diff: 1, p: { pairs: 4, time: 65 } },
+  { id: 4, w: 1, name: "Il Tuo Sorriso", type: "tap", emoji: "\u{1F60A}", story: "Stelline appaiono per un attimo. Tappale in fretta!", coins: 90, diff: 1, p: { target: 12, time: 22, interval: 1300, size: 62 } },
+  { id: 5, w: 1, name: "Petali Danzanti", type: "sort", emoji: "\u{1F33A}", story: "I petali sono confusi! Smistali per colore.", coins: 110, diff: 1, p: { target: 10, cats: 2, time: 45 } },
+  { id: 6, w: 1, name: "La Tua Risata", type: "simon", emoji: "\u{1F3B5}", story: "I fiori cantano una melodia. Ricordala e ripetila!", coins: 120, diff: 2, p: { maxLen: 3, rounds: 3, showMs: 900 } },
+  { id: 7, w: 1, name: "Occhi Stellati", type: "whack", emoji: "\u{1F41B}", story: "Bruchetti dispettosi vogliono mangiare i fiori! Mandali via!", coins: 100, diff: 1, p: { target: 12, time: 22, grid: 9 } },
+  { id: 8, w: 1, name: "Il Nostro Sentiero", type: "dodge", emoji: "\u{1F6E4}\uFE0F", story: "Corri attraverso il giardino evitando le spine!", coins: 130, diff: 2, p: { dist: 200, speed: 1.4, freq: 0.28 } },
+  { id: 9, w: 1, name: "Cuori in Caduta", type: "heart", emoji: "\u{1F49C}", story: "I cuori cadono pi\xF9 veloci! Non lasciarli a terra!", coins: 150, diff: 2, p: { target: 12, time: 30, speed: 1.8, lightning: false } },
+  { id: 10, w: 1, name: "La Rosa Rossa", type: "memory", emoji: "\u{1F339}", story: "La rosa nasconde un segreto. Trova tutte le coppie in tempo!", coins: 200, diff: 2, p: { pairs: 5, time: 55 } },
+  // MONDO 2
+  { id: 11, w: 2, name: "Sotto le Stelle", type: "heart", emoji: "\u{1F31F}", story: "Le stelle cadenti portano sogni. Raccoglile!", coins: 170, diff: 2, p: { target: 10, time: 30, speed: 1.8, lightning: true } },
+  { id: 12, w: 2, name: "Costellazioni", type: "memory", emoji: "\u2728", story: "Le costellazioni si sono mescolate. Abbina le stelle gemelle!", coins: 180, diff: 2, p: { pairs: 5, time: 55 } },
+  { id: 13, w: 2, name: "Meteoriti", type: "dodge", emoji: "\u2604\uFE0F", story: "I meteoriti cadono veloci! Corri e schivali!", coins: 190, diff: 2, p: { dist: 280, speed: 1.8, freq: 0.35 } },
+  { id: 14, w: 2, name: "Fuochi d'Artificio", type: "bubble", emoji: "\u{1F386}", story: "I fuochi d'artificio esplodono! Scoppia quelli luminosi!", coins: 180, diff: 2, p: { target: 14, time: 26, speed: 1.2 } },
+  { id: 15, w: 2, name: "Galassia Ordinata", type: "sort", emoji: "\u{1F30C}", story: "Stelle e pianeti si sono mescolati. Rimetti in ordine!", coins: 200, diff: 2, p: { target: 14, cats: 3, time: 38 } },
+  { id: 16, w: 2, name: "Musica delle Sfere", type: "simon", emoji: "\u{1F3B6}", story: "I pianeti suonano una sinfonia cosmica. Ripeti!", coins: 210, diff: 3, p: { maxLen: 4, rounds: 4, showMs: 780 } },
+  { id: 17, w: 2, name: "Invasione Spaziale", type: "whack", emoji: "\u{1F6F8}", story: "Alieni dispettosi rubano le stelle! Scacciali!", coins: 195, diff: 2, p: { target: 18, time: 24, grid: 9 } },
+  { id: 18, w: 2, name: "Via Lattea", type: "tap", emoji: "\u{1F320}", story: "Le stelle cadenti appaiono un lampo. Catturale!", coins: 200, diff: 3, p: { target: 16, time: 20, interval: 1e3, size: 52 } },
+  { id: 19, w: 2, name: "Eclissi", type: "heart", emoji: "\u{1F311}", story: "Durante l'eclissi i cuori sono difficili da vedere!", coins: 220, diff: 3, p: { target: 14, time: 28, speed: 2.2, lightning: true } },
+  { id: 20, w: 2, name: "Guardiano Stellare", type: "sort", emoji: "\u2B50", story: "Il guardiano testa la tua velocit\xE0!", coins: 280, diff: 3, p: { target: 18, cats: 3, time: 32 } },
+  // MONDO 3
+  { id: 21, w: 3, name: "Coralli Colorati", type: "sort", emoji: "\u{1FAB8}", story: "I coralli hanno perso i colori! Aiutali!", coins: 250, diff: 3, p: { target: 16, cats: 3, time: 35 } },
+  { id: 22, w: 3, name: "Bolle Sottomarine", type: "bubble", emoji: "\u{1FAE7}", story: "Bolle salgono dal fondo marino. Scoppiale!", coins: 255, diff: 3, p: { target: 16, time: 24, speed: 1.3 } },
+  { id: 23, w: 3, name: "Tesori Sommersi", type: "memory", emoji: "\u{1FA99}", story: "Il tesoro \xE8 sepolto! Trova i gioielli nascosti!", coins: 260, diff: 3, p: { pairs: 6, time: 48 } },
+  { id: 24, w: 3, name: "Squalo!", type: "dodge", emoji: "\u{1F988}", story: "Nuota veloce! Lo squalo arriva da ogni direzione!", coins: 270, diff: 3, p: { dist: 350, speed: 2.2, freq: 0.4 } },
+  { id: 25, w: 3, name: "Meduse Danzanti", type: "tap", emoji: "\u{1FABC}", story: "Le meduse luminose appaiono e svaniscono. Toccale!", coins: 265, diff: 3, p: { target: 18, time: 20, interval: 880, size: 52 } },
+  { id: 26, w: 3, name: "Canto delle Sirene", type: "simon", emoji: "\u{1F9DC}", story: "Le sirene cantano una melodia. Ripetila!", coins: 275, diff: 3, p: { maxLen: 5, rounds: 4, showMs: 720 } },
+  { id: 27, w: 3, name: "Piovre Dispettose", type: "whack", emoji: "\u{1F419}", story: "Le piovre rubano le perle! Scacciale!", coins: 270, diff: 3, p: { target: 22, time: 22, grid: 9 } },
+  { id: 28, w: 3, name: "Corrente Oceanica", type: "heart", emoji: "\u{1F30A}", story: "La corrente porta i cuori ovunque. Seguili!", coins: 285, diff: 3, p: { target: 16, time: 30, speed: 2.4, lightning: true } },
+  { id: 29, w: 3, name: "Tempesta Marina", type: "dodge", emoji: "\u26C8\uFE0F", story: "La tempesta scuote il mare! Schiva le onde!", coins: 300, diff: 4, p: { dist: 420, speed: 2.6, freq: 0.44 } },
+  { id: 30, w: 3, name: "Il Kraken", type: "memory", emoji: "\u{1F432}", story: "Il Kraken ha rubato i ricordi! Recuperali!", coins: 380, diff: 4, p: { pairs: 7, time: 48 } },
+  // MONDO 4
+  { id: 31, w: 4, name: "Funghi Incantati", type: "whack", emoji: "\u{1F344}", story: "I folletti si nascondono sotto i funghi. Scoprili!", coins: 310, diff: 3, p: { target: 24, time: 24, grid: 12 } },
+  { id: 32, w: 4, name: "Fata del Bosco", type: "tap", emoji: "\u{1F9DA}", story: "Le fate lampeggiano tra gli alberi. Catturale!", coins: 315, diff: 4, p: { target: 20, time: 18, interval: 780, size: 48 } },
+  { id: 33, w: 4, name: "Bacche Selvatiche", type: "sort", emoji: "\u{1FAD0}", story: "Le bacche sono mischiate! Smistale veloce!", coins: 320, diff: 4, p: { target: 18, cats: 4, time: 32 } },
+  { id: 34, w: 4, name: "Radici Intrecciate", type: "memory", emoji: "\u{1F333}", story: "Le radici nascondono simboli segreti. Abbinali!", coins: 330, diff: 4, p: { pairs: 7, time: 42 } },
+  { id: 35, w: 4, name: "Sciame di Lucciole", type: "bubble", emoji: "\u2728", story: "Le lucciole brillano nell'oscurit\xE0. Scoppiale!", coins: 335, diff: 4, p: { target: 18, time: 20, speed: 1.5 } },
+  { id: 36, w: 4, name: "Tamburi della Foresta", type: "simon", emoji: "\u{1F941}", story: "Il vecchio saggio suona i tamburi. Ripeti il ritmo!", coins: 345, diff: 4, p: { maxLen: 6, rounds: 4, showMs: 660 } },
+  { id: 37, w: 4, name: "Rovi Spinosi", type: "dodge", emoji: "\u{1F33F}", story: "I rovi crescono veloci! Corri e schiva!", coins: 350, diff: 4, p: { dist: 500, speed: 2.8, freq: 0.46 } },
+  { id: 38, w: 4, name: "Nettare dei Fiori", type: "heart", emoji: "\u{1F33C}", story: "Gocce di nettare scendono dagli alberi. Raccoglile!", coins: 360, diff: 4, p: { target: 18, time: 28, speed: 2.6, lightning: true } },
+  { id: 39, w: 4, name: "Spiriti del Bosco", type: "tap", emoji: "\u{1F47B}", story: "Gli spiriti appaiono per un secondo! Toccali!", coins: 370, diff: 4, p: { target: 22, time: 20, interval: 700, size: 44 } },
+  { id: 40, w: 4, name: "Il Guardiano", type: "sort", emoji: "\u{1F981}", story: "Il guardiano vuole che dimostri saggezza! \u{1F406}", coins: 440, diff: 4, p: { target: 22, cats: 4, time: 28 } },
+  // MONDO 5
+  { id: 41, w: 5, name: "Sogni d'Oro", type: "bubble", emoji: "\u{1F4AD}", story: "I sogni fluttuano come bolle dorate. Scoppiale!", coins: 380, diff: 4, p: { target: 20, time: 22, speed: 1.7 } },
+  { id: 42, w: 5, name: "Ombre Danzanti", type: "memory", emoji: "\u{1F311}", story: "Le ombre si mescolano nel buio. Trova le coppie!", coins: 385, diff: 4, p: { pairs: 7, time: 38 } },
+  { id: 43, w: 5, name: "Pipistrelli Veloci", type: "whack", emoji: "\u{1F987}", story: "I pipistrelli svolazzano ovunque! Cattura i dispettosi!", coins: 390, diff: 4, p: { target: 26, time: 22, grid: 12 } },
+  { id: 44, w: 5, name: "Luna Piena", type: "heart", emoji: "\u{1F315}", story: "La luna fa cadere stelle d'argento. Raccoglile!", coins: 400, diff: 5, p: { target: 18, time: 28, speed: 2.8, lightning: true } },
+  { id: 45, w: 5, name: "Notte Stellata", type: "sort", emoji: "\u{1F303}", story: "Cinque costellazioni si sono mescolate!", coins: 405, diff: 5, p: { target: 20, cats: 5, time: 30 } },
+  { id: 46, w: 5, name: "Sussurri Notturni", type: "simon", emoji: "\u{1F32C}\uFE0F", story: "Il vento porta messaggi segreti. Ascolta e ripeti!", coins: 415, diff: 5, p: { maxLen: 7, rounds: 4, showMs: 620 } },
+  { id: 47, w: 5, name: "Fulmini Purpurei", type: "dodge", emoji: "\u26A1", story: "I fulmini magici cadono da ogni parte! Schivali!", coins: 420, diff: 5, p: { dist: 580, speed: 3, freq: 0.48 } },
+  { id: 48, w: 5, name: "Fuochi Fatui", type: "tap", emoji: "\u{1F52E}", story: "I fuochi fatui appaiono per un istante. Catturali!", coins: 425, diff: 5, p: { target: 22, time: 20, interval: 660, size: 42 } },
+  { id: 49, w: 5, name: "Nebbia Magica", type: "bubble", emoji: "\u{1F32B}\uFE0F", story: "Nella nebbia si nascondono bolle di luce!", coins: 430, diff: 5, p: { target: 22, time: 18, speed: 1.9 } },
+  { id: 50, w: 5, name: "La Strega della Notte", type: "memory", emoji: "\u{1F9D9}", story: "La strega lancia un incantesimo! Rompi il sortilegio!", coins: 520, diff: 5, p: { pairs: 8, time: 38 } },
+  // MONDO 6
+  { id: 51, w: 6, name: "Lava Bollente", type: "dodge", emoji: "\u{1F30B}", story: "La lava avanza! Corri il pi\xF9 che puoi!", coins: 450, diff: 5, p: { dist: 650, speed: 3.2, freq: 0.5 } },
+  { id: 52, w: 6, name: "Cenere Infuocata", type: "heart", emoji: "\u{1F525}", story: "Frammenti di stelle cadono dal vulcano!", coins: 455, diff: 5, p: { target: 20, time: 26, speed: 3, lightning: true } },
+  { id: 53, w: 6, name: "Pietre Preziose", type: "sort", emoji: "\u{1F48E}", story: "Il vulcano ha eruttato gemme! Smistale!", coins: 460, diff: 5, p: { target: 22, cats: 4, time: 26 } },
+  { id: 54, w: 6, name: "Salamandre", type: "whack", emoji: "\u{1F98E}", story: "Le salamandre di fuoco bruciano tutto! Scacciale!", coins: 465, diff: 5, p: { target: 28, time: 22, grid: 12 } },
+  { id: 55, w: 6, name: "Bolle di Magma", type: "bubble", emoji: "\u{1F321}\uFE0F", story: "Le bolle di magma salgono velocissime!", coins: 470, diff: 5, p: { target: 24, time: 18, speed: 2 } },
+  { id: 56, w: 6, name: "Ruggito del Vulcano", type: "simon", emoji: "\u{1F4A5}", story: "Il vulcano parla! Ripeti il suo linguaggio!", coins: 480, diff: 5, p: { maxLen: 8, rounds: 4, showMs: 580 } },
+  { id: 57, w: 6, name: "Ceneri Volanti", type: "tap", emoji: "\u{1F32A}\uFE0F", story: "Le braci volano veloci! Toccale!", coins: 475, diff: 5, p: { target: 26, time: 18, interval: 620, size: 40 } },
+  { id: 58, w: 6, name: "Geiser Improvviso", type: "memory", emoji: "\u{1F4A6}", story: "Il geiser ha sparso carte ovunque! Abbinale!", coins: 485, diff: 5, p: { pairs: 8, time: 36 } },
+  { id: 59, w: 6, name: "Tornado di Fuoco", type: "dodge", emoji: "\u{1F300}", story: "Un tornado infuocato! Schiva le fiamme!", coins: 495, diff: 5, p: { dist: 720, speed: 3.4, freq: 0.52 } },
+  { id: 60, w: 6, name: "Il Drago", type: "sort", emoji: "\u{1F409}", story: "Il drago protegge il vulcano! Dimostragli la tua abilit\xE0!", coins: 580, diff: 5, p: { target: 24, cats: 5, time: 24 } },
+  // MONDO 7
+  { id: 61, w: 7, name: "Guardie del Castello", type: "whack", emoji: "\u2694\uFE0F", story: "Le guardie bloccano il cammino!", coins: 510, diff: 5, p: { target: 30, time: 22, grid: 12 } },
+  { id: 62, w: 7, name: "Labirinto Dorato", type: "sort", emoji: "\u{1F31F}", story: "Nel labirinto dorato gli oggetti sono sparsi!", coins: 515, diff: 5, p: { target: 24, cats: 5, time: 24 } },
+  { id: 63, w: 7, name: "Tesoro del Re", type: "memory", emoji: "\u{1F451}", story: "Il re nasconde il suo tesoro!", coins: 520, diff: 5, p: { pairs: 9, time: 34 } },
+  { id: 64, w: 7, name: "Frecce Incantate", type: "dodge", emoji: "\u{1F3F9}", story: "Le frecce magiche volano ovunque!", coins: 530, diff: 5, p: { dist: 800, speed: 3.6, freq: 0.54 } },
+  { id: 65, w: 7, name: "Campane del Castello", type: "simon", emoji: "\u{1F514}", story: "Le campane suonano una melodia reale!", coins: 540, diff: 5, p: { maxLen: 8, rounds: 5, showMs: 560 } },
+  { id: 66, w: 7, name: "Candele Magiche", type: "tap", emoji: "\u{1F56F}\uFE0F", story: "Le candele si accendono e spengono. Toccale!", coins: 535, diff: 5, p: { target: 26, time: 17, interval: 580, size: 38 } },
+  { id: 67, w: 7, name: "Fontana Stellata", type: "heart", emoji: "\u2B50", story: "La fontana magica lancia stelle d'oro!", coins: 545, diff: 5, p: { target: 20, time: 26, speed: 3.2, lightning: true } },
+  { id: 68, w: 7, name: "Bolle di Cristallo", type: "bubble", emoji: "\u{1F4A0}", story: "Le bolle di cristallo brillano!", coins: 550, diff: 5, p: { target: 26, time: 17, speed: 2.2 } },
+  { id: 69, w: 7, name: "Corridoio degli Specchi", type: "memory", emoji: "\u{1FA9E}", story: "I specchi confondono! Trova le coppie!", coins: 560, diff: 5, p: { pairs: 9, time: 32 } },
+  { id: 70, w: 7, name: "Il Re delle Stelle", type: "dodge", emoji: "\u{1F3F0}", story: "Il Re ti sfida! Corri attraverso la sala del trono!", coins: 650, diff: 5, p: { dist: 880, speed: 3.8, freq: 0.56 } },
+  // MONDO 8
+  { id: 71, w: 8, name: "Colori dell'Arcobaleno", type: "sort", emoji: "\u{1F308}", story: "I colori si sono mescolati! Rimettili in ordine!", coins: 560, diff: 5, p: { target: 26, cats: 6, time: 22 } },
+  { id: 72, w: 8, name: "Unicorni Danzanti", type: "tap", emoji: "\u{1F984}", story: "Gli unicorni galoppano veloci. Toccali!", coins: 565, diff: 5, p: { target: 28, time: 16, interval: 560, size: 38 } },
+  { id: 73, w: 8, name: "Pioggia Colorata", type: "heart", emoji: "\u{1F302}", story: "Gocce colorate piovono dall'arcobaleno!", coins: 575, diff: 5, p: { target: 22, time: 26, speed: 3.4, lightning: true } },
+  { id: 74, w: 8, name: "Gemme dell'Arcobaleno", type: "memory", emoji: "\u{1F48D}", story: "Le gemme arcobaleno si sono confuse!", coins: 580, diff: 5, p: { pairs: 9, time: 30 } },
+  { id: 75, w: 8, name: "Farfalle Arcobaleno", type: "whack", emoji: "\u{1F98B}", story: "Le farfalle portano via le gemme!", coins: 585, diff: 5, p: { target: 32, time: 22, grid: 12 } },
+  { id: 76, w: 8, name: "Sinfonia Cromatica", type: "simon", emoji: "\u{1F3A8}", story: "La melodia arcobaleno ha tante note!", coins: 595, diff: 5, p: { maxLen: 9, rounds: 5, showMs: 530 } },
+  { id: 77, w: 8, name: "Bolle Arcobaleno", type: "bubble", emoji: "\u{1FAE7}", story: "Bolle di tutti i colori! Scoppiale!", coins: 600, diff: 5, p: { target: 26, time: 16, speed: 2.3 } },
+  { id: 78, w: 8, name: "Tempesta Cromatica", type: "dodge", emoji: "\u26C8\uFE0F", story: "I colori impazziti cadono da ogni parte!", coins: 610, diff: 5, p: { dist: 950, speed: 4, freq: 0.57 } },
+  { id: 79, w: 8, name: "Vortice di Colori", type: "tap", emoji: "\u{1F300}", story: "Il vortice gira vorticosamente. Tocca i target!", coins: 615, diff: 5, p: { target: 30, time: 15, interval: 540, size: 36 } },
+  { id: 80, w: 8, name: "Guardiano Arcobaleno", type: "sort", emoji: "\u{1F308}", story: "Il guardiano finale mette alla prova tutto!", coins: 700, diff: 5, p: { target: 28, cats: 6, time: 20 } },
+  // MONDO 9
+  { id: 81, w: 9, name: "Primo Raggio", type: "heart", emoji: "\u{1F305}", story: "Il sole porta i suoi raggi d'amore. Raccoglili!", coins: 630, diff: 5, p: { target: 24, time: 26, speed: 3.5, lightning: true } },
+  { id: 82, w: 9, name: "Uccelli del Mattino", type: "tap", emoji: "\u{1F426}", story: "Gli uccelli volano veloci. Catturali!", coins: 635, diff: 5, p: { target: 30, time: 15, interval: 520, size: 36 } },
+  { id: 83, w: 9, name: "Rugiada del Mattino", type: "bubble", emoji: "\u{1F4A7}", story: "La rugiada scintilla all'alba. Scoppiale!", coins: 640, diff: 5, p: { target: 28, time: 15, speed: 2.5 } },
+  { id: 84, w: 9, name: "Fiori dell'Alba", type: "sort", emoji: "\u{1F337}", story: "I fiori dell'alba aspettano ordine!", coins: 645, diff: 5, p: { target: 28, cats: 6, time: 20 } },
+  { id: 85, w: 9, name: "Brezza Mattutina", type: "dodge", emoji: "\u{1F343}", story: "La brezza porta foglie da ogni direzione!", coins: 655, diff: 5, p: { dist: 1020, speed: 4.2, freq: 0.58 } },
+  { id: 86, w: 9, name: "Canto dell'Aurora", type: "simon", emoji: "\u{1F304}", story: "L'aurora canta molte note. Memorizzale!", coins: 665, diff: 5, p: { maxLen: 9, rounds: 5, showMs: 510 } },
+  { id: 87, w: 9, name: "Api dell'Alba", type: "whack", emoji: "\u{1F41D}", story: "Le api ronzano ovunque! Guidale!", coins: 660, diff: 5, p: { target: 34, time: 22, grid: 16 } },
+  { id: 88, w: 9, name: "Specchio dell'Alba", type: "memory", emoji: "\u{1FA9E}", story: "L'alba si riflette nell'acqua. Trova le coppie!", coins: 670, diff: 5, p: { pairs: 10, time: 30 } },
+  { id: 89, w: 9, name: "Vento del Cambiamento", type: "heart", emoji: "\u{1F32C}\uFE0F", story: "Il vento porta nuove promesse. Raccoglile!", coins: 680, diff: 5, p: { target: 26, time: 26, speed: 3.8, lightning: true } },
+  { id: 90, w: 9, name: "Il Nuovo Giorno", type: "sort", emoji: "\u2600\uFE0F", story: "Smista tutto prima che sorga il sole!", coins: 750, diff: 5, p: { target: 30, cats: 6, time: 18 } },
+  // MONDO 10 - Finale
+  { id: 91, w: 10, name: "Il Tesoro Pi\xF9 Grande", type: "memory", emoji: "\u{1F49C}", story: "Il cuore del mondo nasconde il tesoro pi\xF9 grande!", coins: 800, diff: 5, p: { pairs: 10, time: 32 } },
+  { id: 92, w: 10, name: "Pioggia di Stelle", type: "heart", emoji: "\u{1F31F}", story: "Stelle d'amore piovono dal cielo. Raccoglile tutte!", coins: 820, diff: 5, p: { target: 28, time: 28, speed: 4, lightning: true } },
+  { id: 93, w: 10, name: "Il Coro Finale", type: "simon", emoji: "\u{1F3BC}", story: "Il grande coro intona la melodia d'amore!", coins: 840, diff: 5, p: { maxLen: 10, rounds: 5, showMs: 480 } },
+  { id: 94, w: 10, name: "Tornado d'Amore", type: "dodge", emoji: "\u{1F49C}", story: "Il tornado d'amore porta tutto via! Resisti!", coins: 860, diff: 5, p: { dist: 1100, speed: 4.5, freq: 0.6 } },
+  { id: 95, w: 10, name: "Cristalli del Cuore", type: "bubble", emoji: "\u{1F48E}", story: "I cristalli del cuore brillano. Scoppiali!", coins: 870, diff: 5, p: { target: 28, time: 15, speed: 2.8 } },
+  { id: 96, w: 10, name: "Guardiani dell'Amore", type: "whack", emoji: "\u{1F6E1}\uFE0F", story: "I guardiani testano il tuo amore!", coins: 880, diff: 5, p: { target: 36, time: 20, grid: 16 } },
+  { id: 97, w: 10, name: "Danza dei Cuori", type: "tap", emoji: "\u{1F483}", story: "I cuori danzano veloci! Toccali nel ritmo!", coins: 890, diff: 5, p: { target: 32, time: 14, interval: 480, size: 34 } },
+  { id: 98, w: 10, name: "Armonia Perfetta", type: "sort", emoji: "\u{1F3B5}", story: "L'armonia finale richiede ordine perfetto!", coins: 910, diff: 5, p: { target: 30, cats: 6, time: 18 } },
+  { id: 99, w: 10, name: "Il Ricordo Pi\xF9 Bello", type: "memory", emoji: "\u{1F4F8}", story: "L'ultimo ricordo \xE8 il pi\xF9 bello di tutti!", coins: 950, diff: 5, p: { pairs: 10, time: 28 } },
+  { id: 100, w: 10, name: "Per Sempre \u267E\uFE0F", type: "heart", emoji: "\u267E\uFE0F", story: "Raccoglie gli ultimi cuori... e poi scopri la tua sorpresa \u{1F305}", coins: 1500, diff: 5, p: { target: 30, time: 35, speed: 3.5, lightning: true } }
+];
+function Buffy({ size = 60, color = "#FF6B9D", acc = "none", mood = "happy" }) {
+  const mo = { happy: "M 22 29 Q 30 35 38 29", sad: "M 22 32 Q 30 26 38 32", excited: "M 21 28 Q 30 36 39 28", dead: "M 24 31 L 36 31" };
+  return /* @__PURE__ */ React.createElement("svg", { width: size, height: size, viewBox: "0 0 60 60" }, /* @__PURE__ */ React.createElement("ellipse", { cx: "30", cy: "57", rx: "14", ry: "3", fill: "rgba(0,0,0,0.25)" }), /* @__PURE__ */ React.createElement("ellipse", { cx: "30", cy: "46", rx: "14", ry: "11", fill: color }), /* @__PURE__ */ React.createElement("ellipse", { cx: "12", cy: "43", rx: "8", ry: "5", fill: color, transform: "rotate(-15,12,43)" }), /* @__PURE__ */ React.createElement("ellipse", { cx: "48", cy: "43", rx: "8", ry: "5", fill: color, transform: "rotate(15,48,43)" }), /* @__PURE__ */ React.createElement("circle", { cx: "30", cy: "25", r: "20", fill: color }), /* @__PURE__ */ React.createElement("ellipse", { cx: "11", cy: "22", rx: "5", ry: "7", fill: color }), /* @__PURE__ */ React.createElement("ellipse", { cx: "49", cy: "22", rx: "5", ry: "7", fill: color }), /* @__PURE__ */ React.createElement("ellipse", { cx: "22", cy: "23", rx: "6.5", ry: "7.5", fill: "white" }), /* @__PURE__ */ React.createElement("ellipse", { cx: "38", cy: "23", rx: "6.5", ry: "7.5", fill: "white" }), mood === "dead" ? /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("line", { x1: "18", y1: "19", x2: "25", y2: "26", stroke: "#1a0533", strokeWidth: "2" }), /* @__PURE__ */ React.createElement("line", { x1: "25", y1: "19", x2: "18", y2: "26", stroke: "#1a0533", strokeWidth: "2" }), /* @__PURE__ */ React.createElement("line", { x1: "34", y1: "19", x2: "41", y2: "26", stroke: "#1a0533", strokeWidth: "2" }), /* @__PURE__ */ React.createElement("line", { x1: "41", y1: "19", x2: "34", y2: "26", stroke: "#1a0533", strokeWidth: "2" })) : /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("circle", { cx: "23", cy: "23", r: "4", fill: "#1a0533" }), /* @__PURE__ */ React.createElement("circle", { cx: "37", cy: "23", r: "4", fill: "#1a0533" }), /* @__PURE__ */ React.createElement("circle", { cx: "24.5", cy: "21", r: "1.5", fill: "white" }), /* @__PURE__ */ React.createElement("circle", { cx: "38.5", cy: "21", r: "1.5", fill: "white" })), /* @__PURE__ */ React.createElement("ellipse", { cx: "15", cy: "29", rx: "5", ry: "3", fill: "#FF9FB5", opacity: "0.5" }), /* @__PURE__ */ React.createElement("ellipse", { cx: "45", cy: "29", rx: "5", ry: "3", fill: "#FF9FB5", opacity: "0.5" }), /* @__PURE__ */ React.createElement("path", { d: mo[mood] || mo.happy, stroke: "#333", strokeWidth: "2", fill: "none", strokeLinecap: "round" }), acc === "bow" && /* @__PURE__ */ React.createElement("g", null, /* @__PURE__ */ React.createElement("path", { d: "M 18 6 L 26 11 L 18 16 Z", fill: "#FF6B9D" }), /* @__PURE__ */ React.createElement("path", { d: "M 42 6 L 34 11 L 42 16 Z", fill: "#FF6B9D" }), /* @__PURE__ */ React.createElement("circle", { cx: "30", cy: "11", r: "3", fill: "#FF9FB5" })), acc === "crown" && /* @__PURE__ */ React.createElement("path", { d: "M 16 8 L 20 2 L 30 7 L 40 2 L 44 8 Z", fill: "#FFD700", stroke: "#FFA500", strokeWidth: "0.5" }), acc === "wings" && /* @__PURE__ */ React.createElement("g", { opacity: "0.7" }, /* @__PURE__ */ React.createElement("path", { d: "M 5 32 Q -4 20 2 10 Q 10 26 16 32 Z", fill: "white" }), /* @__PURE__ */ React.createElement("path", { d: "M 55 32 Q 64 20 58 10 Q 50 26 44 32 Z", fill: "white" })), acc === "star" && /* @__PURE__ */ React.createElement("path", { d: "M 30 1 L 32 7 L 38 7 L 33 11 L 35 17 L 30 13 L 25 17 L 27 11 L 22 7 L 28 7 Z", fill: "#FFD700" }));
+}
+function Confetti({ active }) {
+  const pieces = useRef(Array.from({ length: 38 }, (_, i) => ({ id: i, x: Math.random() * 100, color: [C.pink, C.yellow, C.purple, C.green, C.blue, C.orange][i % 6], delay: Math.random() * 0.45, size: 7 + Math.random() * 8, round: Math.random() > 0.5 }))).current;
+  if (!active) return null;
+  return /* @__PURE__ */ React.createElement("div", { style: { position: "fixed", inset: 0, pointerEvents: "none", zIndex: 999, overflow: "hidden" } }, pieces.map((p) => /* @__PURE__ */ React.createElement("div", { key: p.id, style: { position: "absolute", left: `${p.x}%`, top: -20, width: p.size, height: p.size, background: p.color, borderRadius: p.round ? "50%" : "2px", animation: `cfAll 1.7s ${p.delay}s ease-in forwards` } })));
+}
+function HeartCatcher({ mission: mission2, skin, acc, onComplete }) {
+  var _a;
+  const { target, time: tL, speed, lightning } = mission2.p;
+  const [pos, setPos] = useState(50);
+  const [items, setItems] = useState([]);
+  const [caught, setCaught] = useState(0);
+  const [lives, setLives] = useState(3);
+  const [timeLeft, setTimeLeft] = useState(tL);
+  const [phase, setPhase] = useState("playing");
+  const G = useRef({ pos: 50, caught: 0, lives: 3, items: [], run: true, nid: 0 });
+  const keys = useRef({});
+  useEffect(() => {
+    const h = (e) => {
+      keys.current[e.key] = e.type === "keydown";
+    };
+    window.addEventListener("keydown", h);
+    window.addEventListener("keyup", h);
+    return () => {
+      window.removeEventListener("keydown", h);
+      window.removeEventListener("keyup", h);
+    };
+  }, []);
+  useEffect(() => {
+    if (phase !== "playing") return;
+    const t = setInterval(() => setTimeLeft((p) => {
+      if (p <= 1) {
+        setPhase("lost");
+        sfx.fail();
+        return 0;
+      }
+      return p - 1;
+    }), 1e3);
+    return () => clearInterval(t);
+  }, [phase]);
+  useEffect(() => {
+    if (phase !== "playing") return;
+    const loop = setInterval(() => {
+      const g = G.current;
+      if (!g.run) return;
+      if (keys.current["ArrowLeft"] || keys.current["a"]) g.pos = Math.max(5, g.pos - 3);
+      if (keys.current["ArrowRight"] || keys.current["d"]) g.pos = Math.min(95, g.pos + 3);
+      if (Math.random() < 0.045) {
+        const isL = lightning && Math.random() < 0.22;
+        g.items.push({ id: g.nid++, x: Math.random() * 88 + 6, y: 0, isL });
+      }
+      g.items = g.items.map((it) => __spreadProps(__spreadValues({}, it), { y: it.y + speed * 1.2 })).filter((it) => {
+        if (it.y > 90) return false;
+        if (Math.abs(it.x - g.pos) < 10 && it.y > 74 && it.y < 92) {
+          if (it.isL) {
+            g.lives = Math.max(0, g.lives - 1);
+            setLives(g.lives);
+            sfx.miss();
+            if (g.lives <= 0) {
+              setPhase("lost");
+              sfx.fail();
+              g.run = false;
+            }
+          } else {
+            g.caught++;
+            sfx.collect();
+            setCaught(g.caught);
+            if (g.caught >= target) {
+              setPhase("won");
+              sfx.complete();
+              g.run = false;
+            }
+          }
+          return false;
+        }
+        return true;
+      });
+      setPos(g.pos);
+      setItems([...g.items]);
+    }, 30);
+    return () => clearInterval(loop);
+  }, [phase, speed, target, lightning]);
+  useEffect(() => {
+    if (phase === "won") setTimeout(() => onComplete(3, mission2.coins), 700);
+    if (phase === "lost") setTimeout(() => onComplete(0, 0), 700);
+  }, [phase]);
+  const mL = () => {
+    G.current.pos = Math.max(5, G.current.pos - 5);
+  };
+  const mR = () => {
+    G.current.pos = Math.min(95, G.current.pos + 5);
+  };
+  const wc = ((_a = WORLDS.find((w) => w.id === mission2.w)) == null ? void 0 : _a.color) || C.pink;
+  return /* @__PURE__ */ React.createElement("div", { style: { position: "relative", width: "100%", height: 340, background: `linear-gradient(180deg,${C.dark} 0%,${wc}22 100%)`, borderRadius: 16, overflow: "hidden", userSelect: "none" } }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", justifyContent: "space-between", padding: "8px 12px", position: "relative", zIndex: 10 } }, /* @__PURE__ */ React.createElement("div", { style: { color: C.yellow, fontWeight: 700 } }, "\u{1F49C} ", caught, "/", target), /* @__PURE__ */ React.createElement("div", { style: { color: timeLeft < 10 ? C.red : C.white, fontWeight: 700 } }, "\u23F1 ", timeLeft, "s"), /* @__PURE__ */ React.createElement("div", { style: { color: C.red } }, "\u{1F49C}".repeat(Math.max(0, lives)))), items.map((it) => /* @__PURE__ */ React.createElement("div", { key: it.id, style: { position: "absolute", left: `${it.x}%`, top: `${it.y}%`, fontSize: 22, transform: "translate(-50%,-50%)", pointerEvents: "none" } }, it.isL ? "\u26A1" : "\u{1F49C}")), /* @__PURE__ */ React.createElement("div", { style: { position: "absolute", left: `${pos}%`, bottom: 30, transform: "translateX(-50%)", transition: "left 0.05s" } }, /* @__PURE__ */ React.createElement(Buffy, { size: 52, color: SK[skin] || C.pink, acc, mood: phase === "lost" ? "dead" : phase === "won" ? "excited" : "happy" })), /* @__PURE__ */ React.createElement("div", { style: { position: "absolute", bottom: 4, left: 0, right: 0, display: "flex", justifyContent: "space-between", padding: "0 16px" } }, /* @__PURE__ */ React.createElement("button", { onPointerDown: mL, style: __spreadProps(__spreadValues({}, BS), { fontSize: 22, padding: "8px 22px" }) }, "\u25C0"), /* @__PURE__ */ React.createElement("button", { onPointerDown: mR, style: __spreadProps(__spreadValues({}, BS), { fontSize: 22, padding: "8px 22px" }) }, "\u25B6")), phase !== "playing" && /* @__PURE__ */ React.createElement("div", { style: { position: "absolute", inset: 0, background: "rgba(0,0,0,0.72)", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 8 } }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 52 } }, phase === "won" ? "\u{1F389}" : "\u{1F49C}"), /* @__PURE__ */ React.createElement("div", { style: { color: C.white, fontWeight: 800, fontSize: 20 } }, phase === "won" ? "Perfetto!" : "Riprova!")));
+}
+function MemoryMatch({ mission: mission2, onComplete }) {
+  const { pairs, time: tL } = mission2.p;
+  const POOL = ["\u{1F49C}", "\u2B50", "\u{1F338}", "\u{1F3B5}", "\u{1F98B}", "\u{1F308}", "\u{1F340}", "\u{1F319}", "\u{1F48E}", "\u{1F525}", "\u{1F380}", "\u{1F984}", "\u{1F33A}", "\u{1F3AD}", "\u{1F36D}", "\u{1F3AA}"];
+  const [cards, setCards] = useState(() => [...POOL.slice(0, pairs), ...POOL.slice(0, pairs)].sort(() => Math.random() - 0.5).map((e, i) => ({ id: i, emoji: e, flipped: false, matched: false })));
+  const [sel, setSel] = useState([]);
+  const [matched, setMatched] = useState(0);
+  const [timeLeft, setTimeLeft] = useState(tL);
+  const [phase, setPhase] = useState("playing");
+  const [errors, setErrors] = useState(0);
+  const lock = useRef(false);
+  useEffect(() => {
+    if (phase !== "playing") return;
+    const t = setInterval(() => setTimeLeft((p) => {
+      if (p <= 1) {
+        setPhase("lost");
+        sfx.fail();
+        return 0;
+      }
+      return p - 1;
+    }), 1e3);
+    return () => clearInterval(t);
+  }, [phase]);
+  const flip = (id) => {
+    if (lock.current || phase !== "playing") return;
+    const card = cards.find((c) => c.id === id);
+    if (!card || card.flipped || card.matched) return;
+    sfx.flip();
+    const nc = cards.map((c) => c.id === id ? __spreadProps(__spreadValues({}, c), { flipped: true }) : c);
+    setCards(nc);
+    const ns = [...sel, id];
+    if (ns.length === 2) {
+      lock.current = true;
+      setSel([]);
+      const [a, b] = ns.map((sid) => nc.find((c) => c.id === sid));
+      if (a.emoji === b.emoji) {
+        const fin = nc.map((c) => ns.includes(c.id) ? __spreadProps(__spreadValues({}, c), { matched: true }) : c);
+        setCards(fin);
+        const nm = matched + 1;
+        setMatched(nm);
+        if (nm >= pairs) {
+          setPhase("won");
+          sfx.complete();
+        }
+        lock.current = false;
+      } else {
+        setErrors((e) => e + 1);
+        sfx.miss();
+        setTimeout(() => {
+          setCards((p) => p.map((c) => ns.includes(c.id) ? __spreadProps(__spreadValues({}, c), { flipped: false }) : c));
+          lock.current = false;
+        }, 900);
+      }
+    } else setSel(ns);
+  };
+  useEffect(() => {
+    if (phase === "won") setTimeout(() => onComplete(errors === 0 ? 3 : errors <= pairs ? 2 : 1, mission2.coins), 600);
+    if (phase === "lost") setTimeout(() => onComplete(0, 0), 600);
+  }, [phase]);
+  return /* @__PURE__ */ React.createElement("div", { style: { padding: 12 } }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", justifyContent: "space-between", marginBottom: 10, color: C.white, fontWeight: 700 } }, /* @__PURE__ */ React.createElement("span", null, "\u2705 ", matched, "/", pairs), /* @__PURE__ */ React.createElement("span", { style: { color: timeLeft < 10 ? C.red : C.white } }, "\u23F1 ", timeLeft, "s"), /* @__PURE__ */ React.createElement("span", null, "\u274C ", errors)), /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 7 } }, cards.map((card) => /* @__PURE__ */ React.createElement("div", { key: card.id, onClick: () => flip(card.id), style: { height: 60, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 24, cursor: "pointer", transition: "all 0.2s", background: card.matched ? "#2D1B6922" : card.flipped ? C.purple : C.card, border: `2px solid ${card.matched ? C.green : card.flipped ? C.purple : C.border}`, transform: card.flipped || card.matched ? "scale(1.05)" : "scale(1)", opacity: card.matched ? 0.5 : 1 } }, card.flipped || card.matched ? card.emoji : "\u2753"))), phase !== "playing" && /* @__PURE__ */ React.createElement("div", { style: { textAlign: "center", marginTop: 14, fontSize: 30 } }, phase === "won" ? "\u{1F389} Trovate tutte!" : "\u{1F49C} Tempo scaduto!"));
+}
+function WhackBug({ mission: mission2, onComplete }) {
+  const { target, time: tL, grid } = mission2.p;
+  const cols = grid === 16 ? 4 : 4;
+  const total = grid;
+  const ENM = ["\u{1F41B}", "\u{1F6F8}", "\u{1F419}", "\u{1F987}", "\u{1F98E}", "\u{1F41D}", "\u{1F47B}", "\u{1F41E}"];
+  const enemy = ENM[mission2.w % ENM.length];
+  const [active, setActive] = useState(Array(total).fill(false));
+  const [count, setCount] = useState(0);
+  const [timeLeft, setTimeLeft] = useState(tL);
+  const [phase, setPhase] = useState("playing");
+  const cRef = useRef(0);
+  const pRef = useRef("playing");
+  useEffect(() => {
+    if (phase !== "playing") return;
+    const t = setInterval(() => setTimeLeft((p) => {
+      if (p <= 1) {
+        setPhase("lost");
+        pRef.current = "lost";
+        sfx.fail();
+        return 0;
+      }
+      return p - 1;
+    }), 1e3);
+    return () => clearInterval(t);
+  }, [phase]);
+  useEffect(() => {
+    if (phase !== "playing") return;
+    const rate = Math.max(380, 1100 - mission2.w * 60);
+    const t = setInterval(() => {
+      if (pRef.current !== "playing") return;
+      const idx = Math.floor(Math.random() * total);
+      setActive((p) => {
+        const n = [...p];
+        n[idx] = true;
+        return n;
+      });
+      setTimeout(() => setActive((p) => {
+        const n = [...p];
+        n[idx] = false;
+        return n;
+      }), rate * 0.75);
+    }, rate / 2);
+    return () => clearInterval(t);
+  }, [phase, total]);
+  const hit = (i) => {
+    if (!active[i] || pRef.current !== "playing") return;
+    sfx.collect();
+    setActive((p) => {
+      const n = [...p];
+      n[i] = false;
+      return n;
+    });
+    cRef.current++;
+    setCount(cRef.current);
+    if (cRef.current >= target) {
+      setPhase("won");
+      pRef.current = "won";
+      sfx.complete();
+    }
+  };
+  useEffect(() => {
+    if (phase === "won") setTimeout(() => onComplete(3, mission2.coins), 500);
+    if (phase === "lost") {
+      const pct = count / target;
+      setTimeout(() => onComplete(pct >= 0.7 ? 1 : 0, pct >= 0.7 ? Math.floor(mission2.coins * 0.5) : 0), 500);
+    }
+    ;
+  }, [phase]);
+  return /* @__PURE__ */ React.createElement("div", { style: { padding: 12 } }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", justifyContent: "space-between", marginBottom: 10, color: C.white, fontWeight: 700 } }, /* @__PURE__ */ React.createElement("span", null, "\u{1F44A} ", count, "/", target), /* @__PURE__ */ React.createElement("span", { style: { color: timeLeft < 8 ? C.red : C.white } }, "\u23F1 ", timeLeft, "s")), /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: `repeat(${cols},1fr)`, gap: 8 } }, active.map((a, i) => /* @__PURE__ */ React.createElement("div", { key: i, onClick: () => hit(i), style: { height: 66, borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 28, cursor: "pointer", background: a ? `${C.card}EE` : `${C.surface}88`, border: `2px solid ${a ? C.pink : C.border}`, transition: "all 0.12s", transform: a ? "scale(1.12)" : "scale(0.88)" } }, a ? enemy : "\u{1F33F}"))), phase !== "playing" && /* @__PURE__ */ React.createElement("div", { style: { textAlign: "center", marginTop: 12, fontSize: 30 } }, phase === "won" ? "\u{1F389}" : "\u{1F49C}"));
+}
+function BubblePop({ mission: mission2, onComplete }) {
+  const { target, time: tL, speed } = mission2.p;
+  const [bubbles, setBubbles] = useState([]);
+  const [popped, setPopped] = useState(0);
+  const [timeLeft, setTimeLeft] = useState(tL);
+  const [phase, setPhase] = useState("playing");
+  const nid = useRef(0);
+  const pRef = useRef(0);
+  const phRef = useRef("playing");
+  const BC = [C.pink, C.purple, C.blue, C.green, C.yellow, C.orange];
+  useEffect(() => {
+    if (phase !== "playing") return;
+    const t = setInterval(() => setTimeLeft((p) => {
+      if (p <= 1) {
+        setPhase("lost");
+        phRef.current = "lost";
+        sfx.fail();
+        return 0;
+      }
+      return p - 1;
+    }), 1e3);
+    return () => clearInterval(t);
+  }, [phase]);
+  useEffect(() => {
+    if (phase !== "playing") return;
+    const sp = setInterval(() => {
+      if (phRef.current !== "playing") return;
+      setBubbles((prev) => [...prev.slice(-18), { id: nid.current++, x: Math.random() * 82 + 9, y: 96, size: 28 + Math.random() * 24, color: BC[Math.floor(Math.random() * BC.length)], isT: Math.random() > 0.38 }]);
+    }, 580);
+    const mv = setInterval(() => {
+      if (phRef.current !== "playing") return;
+      setBubbles((p) => p.map((b) => __spreadProps(__spreadValues({}, b), { y: b.y - speed * 0.85 })).filter((b) => b.y > -10));
+    }, 40);
+    return () => {
+      clearInterval(sp);
+      clearInterval(mv);
+    };
+  }, [phase, speed]);
+  const pop = (id, isT) => {
+    if (phRef.current !== "playing") return;
+    setBubbles((p) => p.filter((b) => b.id !== id));
+    if (isT) {
+      sfx.collect();
+      pRef.current++;
+      setPopped(pRef.current);
+      if (pRef.current >= target) {
+        setPhase("won");
+        phRef.current = "won";
+        sfx.complete();
+      }
+    } else sfx.miss();
+  };
+  useEffect(() => {
+    if (phase === "won") setTimeout(() => onComplete(3, mission2.coins), 500);
+    if (phase === "lost") {
+      const pct = popped / target;
+      setTimeout(() => onComplete(pct >= 0.8 ? 2 : pct >= 0.5 ? 1 : 0, Math.floor(mission2.coins * pct * 0.8)), 500);
+    }
+    ;
+  }, [phase]);
+  return /* @__PURE__ */ React.createElement("div", { style: { position: "relative", height: 330, background: `linear-gradient(180deg,${C.dark},${C.surface})`, borderRadius: 16, overflow: "hidden" } }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", justifyContent: "space-between", padding: "8px 12px", color: C.white, fontWeight: 700, position: "relative", zIndex: 10 } }, /* @__PURE__ */ React.createElement("span", null, "\u{1F4A5} ", popped, "/", target), /* @__PURE__ */ React.createElement("span", { style: { color: timeLeft < 8 ? C.red : C.white } }, "\u23F1 ", timeLeft, "s")), bubbles.map((b) => /* @__PURE__ */ React.createElement("div", { key: b.id, onClick: () => pop(b.id, b.isT), style: { position: "absolute", left: `${b.x}%`, top: `${b.y}%`, width: b.size, height: b.size, borderRadius: "50%", background: b.isT ? b.color : "#ffffff18", border: `3px solid ${b.isT ? b.color : "#ffffff33"}`, cursor: "pointer", transform: "translate(-50%,-50%)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: b.size * 0.38, boxShadow: b.isT ? `0 0 14px ${b.color}88` : "none", transition: "top 0.04s linear" } }, b.isT ? "\u2728" : "\u25CB")), phase !== "playing" && /* @__PURE__ */ React.createElement("div", { style: { position: "absolute", inset: 0, background: "rgba(0,0,0,0.72)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 48 } }, phase === "won" ? "\u{1F389}" : "\u{1F49C}"));
+}
+function SimonSays({ mission: mission2, onComplete }) {
+  const { maxLen, rounds, showMs } = mission2.p;
+  const BTNS = [{ c: C.red, e: "\u{1F534}" }, { c: C.blue, e: "\u{1F535}" }, { c: C.green, e: "\u{1F7E2}" }, { c: C.yellow, e: "\u{1F7E1}" }];
+  const [seq, setSeq] = useState([]);
+  const [userSeq, setUserSeq] = useState([]);
+  const [activeBtn, setActiveBtn] = useState(-1);
+  const [round, setRound] = useState(0);
+  const [phase, setPhase] = useState("starting");
+  const [errors, setErrors] = useState(0);
+  const startRound = useCallback((r) => {
+    const len = Math.min(2 + r, maxLen);
+    const ns = Array.from({ length: len }, () => Math.floor(Math.random() * 4));
+    setSeq(ns);
+    setUserSeq([]);
+    setPhase("showing");
+    let i = 0;
+    const show = () => {
+      if (i >= ns.length) {
+        setActiveBtn(-1);
+        setPhase("input");
+        return;
+      }
+      setActiveBtn(ns[i]);
+      sfx.flip();
+      setTimeout(() => {
+        setActiveBtn(-1);
+        setTimeout(() => {
+          i++;
+          show();
+        }, showMs * 0.28);
+      }, showMs);
+    };
+    setTimeout(show, 500);
+  }, [maxLen, showMs]);
+  useEffect(() => {
+    setTimeout(() => startRound(0), 300);
+  }, []);
+  const press = (idx) => {
+    if (phase !== "input") return;
+    const nu = [...userSeq, idx];
+    if (nu[nu.length - 1] !== seq[nu.length - 1]) {
+      sfx.miss();
+      setErrors((e) => e + 1);
+      if (errors >= 2) {
+        setPhase("lost");
+        sfx.fail();
+        setTimeout(() => onComplete(0, 0), 600);
+        return;
+      }
+      setPhase("error");
+      setTimeout(() => {
+        setUserSeq([]);
+        startRound(round);
+      }, 900);
+      return;
+    }
+    sfx.collect();
+    setUserSeq(nu);
+    if (nu.length === seq.length) {
+      const nr = round + 1;
+      setRound(nr);
+      if (nr >= rounds) {
+        setPhase("won");
+        sfx.complete();
+        setTimeout(() => onComplete(errors === 0 ? 3 : errors <= 1 ? 2 : 1, mission2.coins), 600);
+      } else setTimeout(() => startRound(nr), 700);
+    }
+  };
+  return /* @__PURE__ */ React.createElement("div", { style: { padding: 16, textAlign: "center" } }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", justifyContent: "space-between", marginBottom: 12, color: C.white, fontWeight: 700 } }, /* @__PURE__ */ React.createElement("span", null, "\u{1F3B5} Round ", round + 1, "/", rounds), /* @__PURE__ */ React.createElement("span", null, "Lunghezza: ", seq.length), /* @__PURE__ */ React.createElement("span", { style: { color: C.red } }, "\u274C".repeat(errors))), /* @__PURE__ */ React.createElement("div", { style: { marginBottom: 12, color: C.soft, minHeight: 24 } }, phase === "showing" ? "\u{1F440} Guarda la sequenza..." : phase === "input" ? "\u{1F446} Ripeti!" : phase === "error" ? "\u274C Sbagliato!" : phase === "won" ? "\u{1F389}" : ""), /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, maxWidth: 260, margin: "0 auto" } }, BTNS.map((btn, i) => /* @__PURE__ */ React.createElement("div", { key: i, onClick: () => press(i), style: { height: 86, borderRadius: 16, background: activeBtn === i ? btn.c : `${btn.c}44`, border: `3px solid ${btn.c}`, cursor: phase === "input" ? "pointer" : "default", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 32, transition: "all 0.15s", transform: activeBtn === i ? "scale(1.1)" : "scale(1)", boxShadow: activeBtn === i ? `0 0 22px ${btn.c}` : "none" } }, btn.e))), /* @__PURE__ */ React.createElement("div", { style: { marginTop: 12, display: "flex", gap: 4, justifyContent: "center" } }, seq.map((_, i) => /* @__PURE__ */ React.createElement("div", { key: i, style: { width: 10, height: 10, borderRadius: "50%", background: userSeq.length > i ? C.green : C.border } }))));
+}
+function QuickTap({ mission: mission2, onComplete }) {
+  const { target, time: tL, interval, size } = mission2.p;
+  const [pos, setPos] = useState({ x: 50, y: 50 });
+  const [visible, setVisible] = useState(false);
+  const [count, setCount] = useState(0);
+  const [missed, setMissed] = useState(0);
+  const [timeLeft, setTimeLeft] = useState(tL);
+  const [phase, setPhase] = useState("playing");
+  const cRef = useRef(0);
+  const pRef = useRef("playing");
+  useEffect(() => {
+    if (phase !== "playing") return;
+    const t = setInterval(() => setTimeLeft((p) => {
+      if (p <= 1) {
+        setPhase("lost");
+        pRef.current = "lost";
+        sfx.fail();
+        return 0;
+      }
+      return p - 1;
+    }), 1e3);
+    return () => clearInterval(t);
+  }, [phase]);
+  useEffect(() => {
+    if (phase !== "playing") return;
+    const t = setInterval(() => {
+      if (pRef.current !== "playing") return;
+      setPos({ x: 10 + Math.random() * 80, y: 12 + Math.random() * 72 });
+      setVisible(true);
+      setTimeout(() => {
+        if (pRef.current !== "playing") return;
+        setVisible(false);
+        setMissed((m) => m + 1);
+      }, interval * 0.82);
+    }, interval);
+    return () => clearInterval(t);
+  }, [phase, interval]);
+  const tap = () => {
+    if (!visible || pRef.current !== "playing") return;
+    sfx.collect();
+    setVisible(false);
+    cRef.current++;
+    setCount(cRef.current);
+    if (cRef.current >= target) {
+      setPhase("won");
+      pRef.current = "won";
+      sfx.complete();
+    }
+  };
+  useEffect(() => {
+    if (phase === "won") setTimeout(() => onComplete(missed < 3 ? 3 : missed < 8 ? 2 : 1, mission2.coins), 500);
+    if (phase === "lost") {
+      const pct = count / target;
+      setTimeout(() => onComplete(pct >= 0.7 ? 1 : 0, Math.floor(mission2.coins * pct * 0.7)), 500);
+    }
+    ;
+  }, [phase]);
+  return /* @__PURE__ */ React.createElement("div", { style: { position: "relative", height: 330, background: `linear-gradient(135deg,${C.dark},${C.surface})`, borderRadius: 16, overflow: "hidden", touchAction: "none" } }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", justifyContent: "space-between", padding: "8px 12px", color: C.white, fontWeight: 700, position: "relative", zIndex: 10 } }, /* @__PURE__ */ React.createElement("span", null, "\u{1F446} ", count, "/", target), /* @__PURE__ */ React.createElement("span", { style: { color: timeLeft < 8 ? C.red : C.white } }, "\u23F1 ", timeLeft, "s"), /* @__PURE__ */ React.createElement("span", { style: { color: C.soft } }, "\u274C ", missed)), visible && /* @__PURE__ */ React.createElement("div", { onClick: tap, style: { position: "absolute", left: `${pos.x}%`, top: `${pos.y}%`, width: size, height: size, borderRadius: "50%", background: `radial-gradient(circle,${C.yellow},${C.orange})`, transform: "translate(-50%,-50%)", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", fontSize: size * 0.48, boxShadow: `0 0 22px ${C.yellow}88`, zIndex: 5 } }, "\u2B50"), phase !== "playing" && /* @__PURE__ */ React.createElement("div", { style: { position: "absolute", inset: 0, background: "rgba(0,0,0,0.72)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 48 } }, phase === "won" ? "\u{1F389}" : "\u{1F49C}"));
+}
+function SortGame({ mission: mission2, onComplete }) {
+  const { target, cats, time: tL } = mission2.p;
+  const CE = [["\u{1F49C}", "\u{1F338}", "\u{1F49C}", "\u{1F33A}", "\u{1F380}"], ["\u2B50", "\u{1F31F}", "\u2728", "\u{1F4AB}", "\u26A1"], ["\u{1F30A}", "\u{1F4A7}", "\u{1FAE7}", "\u2744\uFE0F", "\u{1F535}"], ["\u{1F343}", "\u{1F33F}", "\u{1F331}", "\u{1F340}", "\u{1F38B}"], ["\u{1F525}", "\u{1F30B}", "\u{1F4A5}", "\u{1F31E}", "\u{1F34A}"], ["\u{1F319}", "\u{1F30C}", "\u{1F320}", "\u{1FA90}", "\u{1F311}"]];
+  const [items, setItems] = useState(() => Array.from({ length: Math.min(target, 8) }, (_, i) => ({ id: i, cat: i % cats, emoji: CE[i % cats][Math.floor(Math.random() * 5)] })).sort(() => Math.random() - 0.5));
+  const [sorted, setSorted] = useState(0);
+  const [timeLeft, setTimeLeft] = useState(tL);
+  const [phase, setPhase] = useState("playing");
+  const [selected, setSelected] = useState(null);
+  const [errors, setErrors] = useState(0);
+  const sRef = useRef(0);
+  const phRef = useRef("playing");
+  const total = Math.min(target, 30);
+  const CC = [C.pink, C.yellow, C.blue, C.green, C.orange, C.purple];
+  useEffect(() => {
+    if (phase !== "playing") return;
+    const t = setInterval(() => setTimeLeft((p) => {
+      if (p <= 1) {
+        setPhase("lost");
+        phRef.current = "lost";
+        sfx.fail();
+        return 0;
+      }
+      return p - 1;
+    }), 1e3);
+    return () => clearInterval(t);
+  }, [phase]);
+  const drop = (cat) => {
+    if (!selected || phRef.current !== "playing") return;
+    if (selected.cat === cat) {
+      sfx.collect();
+      setItems((prev) => {
+        const next = prev.filter((it) => it.id !== selected.id);
+        sRef.current++;
+        setSorted(sRef.current);
+        if (sRef.current >= total) {
+          setPhase("won");
+          phRef.current = "won";
+          sfx.complete();
+        }
+        if (sRef.current < total) {
+          const nc = Math.floor(Math.random() * cats);
+          return [...next, { id: Date.now(), cat: nc, emoji: CE[nc][Math.floor(Math.random() * 5)] }];
+        }
+        return next;
+      });
+    } else {
+      sfx.miss();
+      setErrors((e) => e + 1);
+    }
+    setSelected(null);
+  };
+  useEffect(() => {
+    if (phase === "won") setTimeout(() => onComplete(errors < 3 ? 3 : errors < 8 ? 2 : 1, mission2.coins), 500);
+    if (phase === "lost") {
+      const pct = sorted / total;
+      setTimeout(() => onComplete(pct >= 0.7 ? 1 : 0, Math.floor(mission2.coins * pct * 0.7)), 500);
+    }
+    ;
+  }, [phase]);
+  return /* @__PURE__ */ React.createElement("div", { style: { padding: 12 } }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", justifyContent: "space-between", marginBottom: 10, color: C.white, fontWeight: 700 } }, /* @__PURE__ */ React.createElement("span", null, "\u2705 ", sorted, "/", total), /* @__PURE__ */ React.createElement("span", { style: { color: timeLeft < 8 ? C.red : C.white } }, "\u23F1 ", timeLeft, "s"), /* @__PURE__ */ React.createElement("span", { style: { color: C.red } }, "\u274C ", errors)), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 6, marginBottom: 12, justifyContent: "center" } }, Array.from({ length: cats }, (_, i) => /* @__PURE__ */ React.createElement("div", { key: i, onClick: () => drop(i), style: { flex: 1, height: 54, borderRadius: 12, border: `2px dashed ${CC[i]}`, background: `${CC[i]}22`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18, cursor: "pointer" } }, CE[i][0]))), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexWrap: "wrap", gap: 8, justifyContent: "center" } }, items.map((item) => /* @__PURE__ */ React.createElement("div", { key: item.id, onClick: () => setSelected(item), style: { width: 50, height: 50, borderRadius: 12, background: (selected == null ? void 0 : selected.id) === item.id ? CC[item.cat] : C.card, border: `2px solid ${(selected == null ? void 0 : selected.id) === item.id ? CC[item.cat] : C.border}`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 22, cursor: "pointer", transform: (selected == null ? void 0 : selected.id) === item.id ? "scale(1.18)" : "scale(1)", transition: "all 0.15s" } }, item.emoji))), /* @__PURE__ */ React.createElement("div", { style: { textAlign: "center", marginTop: 8, color: C.soft, fontSize: 12 } }, selected ? `${selected.emoji} \u2014 scegli il contenitore!` : "Tocca oggetto \u2192 poi il contenitore giusto"), phase !== "playing" && /* @__PURE__ */ React.createElement("div", { style: { textAlign: "center", marginTop: 12, fontSize: 30 } }, phase === "won" ? "\u{1F389}" : "\u{1F49C}"));
+}
+function DodgeRun({ mission: mission2, skin, acc, onComplete }) {
+  const { dist, speed, freq } = mission2.p;
+  const [lane, setLane] = useState(1);
+  const [obstacles, setObstacles] = useState([]);
+  const [progress, setProgress] = useState(0);
+  const [lives, setLives] = useState(3);
+  const [phase, setPhase] = useState("playing");
+  const lRef = useRef(1);
+  const livRef = useRef(3);
+  const progRef = useRef(0);
+  const nid = useRef(0);
+  const phRef = useRef("playing");
+  const OBS = ["\u{1F335}", "\u26A1", "\u{1F525}", "\u{1F4A5}", "\u{1F30B}", "\u2744\uFE0F", "\u{1F300}", "\u{1F30A}"];
+  const obs = OBS[mission2.w % OBS.length];
+  useEffect(() => {
+    if (phase !== "playing") return;
+    const loop = setInterval(() => {
+      if (phRef.current !== "playing") return;
+      progRef.current += speed * 0.5;
+      setProgress(Math.min(progRef.current, 100));
+      if (progRef.current >= 100) {
+        setPhase("won");
+        phRef.current = "won";
+        sfx.complete();
+        return;
+      }
+      if (Math.random() < freq * 0.08) {
+        const nl = Math.floor(Math.random() * 3);
+        setObstacles((p) => [...p.slice(-8), { id: nid.current++, lane: nl, y: 0 }]);
+      }
+      setObstacles((p) => p.map((o) => __spreadProps(__spreadValues({}, o), { y: o.y + speed * 2 })).filter((o) => {
+        if (o.y > 86 && o.lane === lRef.current) {
+          sfx.miss();
+          livRef.current = Math.max(0, livRef.current - 1);
+          setLives(livRef.current);
+          if (livRef.current <= 0) {
+            setPhase("lost");
+            phRef.current = "lost";
+            sfx.fail();
+          }
+          return false;
+        }
+        return o.y < 100;
+      }));
+    }, 40);
+    return () => clearInterval(loop);
+  }, [phase, speed, freq]);
+  const go = (l) => {
+    lRef.current = l;
+    setLane(l);
+  };
+  useEffect(() => {
+    if (phase === "won") setTimeout(() => onComplete(3, mission2.coins), 500);
+    if (phase === "lost") setTimeout(() => onComplete(0, 0), 500);
+  }, [phase]);
+  return /* @__PURE__ */ React.createElement("div", { style: { position: "relative", height: 350, background: `linear-gradient(180deg,${C.dark},${C.surface})`, borderRadius: 16, overflow: "hidden" } }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", justifyContent: "space-between", padding: "8px 12px", color: C.white, fontWeight: 700, position: "relative", zIndex: 10 } }, /* @__PURE__ */ React.createElement("span", null, "\u{1F3C3} ", Math.floor(progress), "%"), /* @__PURE__ */ React.createElement("div", { style: { flex: 1, margin: "0 10px", height: 6, background: C.border, borderRadius: 3, alignSelf: "center" } }, /* @__PURE__ */ React.createElement("div", { style: { width: `${progress}%`, height: "100%", background: C.green, borderRadius: 3, transition: "width 0.1s" } })), /* @__PURE__ */ React.createElement("span", { style: { color: C.red } }, "\u{1F49C}".repeat(Math.max(0, lives)))), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", height: 250, margin: "0 12px", gap: 4 } }, [0, 1, 2].map((l) => /* @__PURE__ */ React.createElement("div", { key: l, style: { flex: 1, background: `${C.surface}88`, borderRadius: 8, border: `2px solid ${lane === l ? C.pink : C.border}`, position: "relative", overflow: "hidden" } }, lane === l && /* @__PURE__ */ React.createElement("div", { style: { position: "absolute", bottom: 10, left: "50%", transform: "translateX(-50%)" } }, /* @__PURE__ */ React.createElement(Buffy, { size: 44, color: SK[skin] || C.pink, acc, mood: "excited" })), obstacles.filter((o) => o.lane === l).map((o) => /* @__PURE__ */ React.createElement("div", { key: o.id, style: { position: "absolute", top: `${o.y}%`, left: "50%", transform: "translate(-50%,-50%)", fontSize: 22 } }, obs))))), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 4, padding: "6px 12px" } }, ["\u25C0", "\u25BC", "\u25B6"].map((lbl, i) => /* @__PURE__ */ React.createElement("button", { key: i, onClick: () => go(i), style: __spreadProps(__spreadValues({}, BS), { flex: 1, background: lane === i ? C.pink + "44" : C.card, border: `1px solid ${lane === i ? C.pink : C.border}` }) }, lbl))), phase !== "playing" && /* @__PURE__ */ React.createElement("div", { style: { position: "absolute", inset: 0, background: "rgba(0,0,0,0.72)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 48 } }, phase === "won" ? "\u{1F389}" : "\u{1F49C}"));
+}
+function App() {
+  var _a, _b, _c;
+  const [screen, setScreen] = useState("welcome");
+  const [coins, setCoins] = useState(0);
+  const [completed, setCompleted] = useState({});
+  const [owned, setOwned] = useState(["skin_default"]);
+  const [puStock, setPuStock] = useState({});
+  const [skin, setSkin] = useState("default");
+  const [acc, setAcc] = useState("none");
+  const [selectedWorld, setSelectedWorld] = useState(null);
+  const [selectedMission, setSelectedMission] = useState(null);
+  const [result, setResult] = useState(null);
+  const [shopTab, setShopTab] = useState("skin");
+  const [readMsg, setReadMsg] = useState(null);
+  const [activePU, setActivePU] = useState(null);
+  const [confetti, setConfetti] = useState(false);
+  const [worldStory, setWorldStory] = useState(null);
+  const [secretInput, setSecretInput] = useState("");
+  const [secretUnlocked, setSecretUnlocked] = useState(false);
+  const [showTrophies, setShowTrophies] = useState(false);
+  const [earnedTr, setEarnedTr] = useState([]);
+  const [newTrophy, setNewTrophy] = useState(null);
+  const [streak, setStreak] = useState(0);
+  const [dailyBonus, setDailyBonus] = useState(null);
+  const [totalEarnedEver, setTotalEarnedEver] = useState(0);
+  const CSS = `
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap');
+    *{box-sizing:border-box;}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+    @keyframes cfAll{0%{transform:translateY(-20px) rotate(0deg);opacity:1}100%{transform:translateY(440px) rotate(760deg);opacity:0}}
+    @keyframes slideIn{from{transform:translateY(60px);opacity:0}to{transform:translateY(0);opacity:1}}
+    @keyframes glow{0%,100%{box-shadow:0 0 10px #FF6B9D44}50%{box-shadow:0 0 28px #FF6B9DAA}}
+    @keyframes shimmer{0%,100%{opacity:1}50%{opacity:0.7}}
+  `;
+  useEffect(() => {
+    (async () => {
+      try {
+        const r = JSON.parse(localStorage.getItem("buffy_v3") || "null");
+        if (r && r !== null) {
+          const d = r;
+          setCoins(d.coins || 0);
+          setCompleted(d.completed || {});
+          setOwned(d.owned || ["skin_default"]);
+          setPuStock(d.puStock || {});
+          setSkin(d.skin || "default");
+          setAcc(d.acc || "none");
+          setSecretUnlocked(d.secret || false);
+          setEarnedTr(d.trophies || []);
+          setStreak(d.streak || 0);
+          setTotalEarnedEver(d.totalEver || 0);
+          const today = (/* @__PURE__ */ new Date()).toDateString();
+          if (d.lastBonus !== today) {
+            const bonus = 150 + Math.floor(Object.keys(d.completed || {}).length * 2);
+            setDailyBonus({ amount: bonus, date: today });
+          }
+        } else {
+          setDailyBonus({ amount: 150, date: (/* @__PURE__ */ new Date()).toDateString() });
+        }
+      } catch (e) {
+      }
+    })();
+  }, []);
+  const save = useCallback(async (c, comp, o, pu, sk, ac, sec, tr, str, te, lb) => {
+    try {
+      localStorage.setItem("buffy_v3", JSON.stringify({ coins: c, completed: comp, owned: o, puStock: pu, skin: sk, acc: ac, secret: sec, trophies: tr, streak: str, totalEver: te, lastBonus: lb }));
+    } catch (e) {
+    }
+  }, []);
+  const claimDaily = () => {
+    if (!dailyBonus) return;
+    sfx.daily();
+    const nc = coins + dailyBonus.amount;
+    const nte = totalEarnedEver + dailyBonus.amount;
+    setCoins(nc);
+    setTotalEarnedEver(nte);
+    save(nc, completed, owned, puStock, skin, acc, secretUnlocked, earnedTr, streak, nte, dailyBonus.date);
+    setDailyBonus(null);
+  };
+  const checkTr = useCallback((comp, o, c, sec, cur, str) => {
+    const newOnes = TROPH.filter((t) => !cur.includes(t.id) && t.check(comp, o, c, sec, str));
+    if (newOnes.length > 0) {
+      const upd = [...cur, ...newOnes.map((t) => t.id)];
+      setEarnedTr(upd);
+      setNewTrophy(newOnes[0]);
+      setTimeout(() => setNewTrophy(null), 3500);
+      return upd;
+    }
+    return cur;
+  }, []);
+  const total = Object.keys(completed).length;
+  const totalStars = Object.values(completed).reduce((s, v) => s + (v.stars || 0), 0);
+  const wUnlocked = (wid) => {
+    const w = WORLDS.find((x) => x.id === wid);
+    return total >= ((w == null ? void 0 : w.unlock) || 0);
+  };
+  const startMission = (mission2) => {
+    setSelectedMission(mission2);
+    setScreen("playing");
+  };
+  const finishMission = (stars, earned) => {
+    let fe = earned;
+    if (activePU === "pu_2x") fe = earned * 2;
+    const prev = completed[selectedMission.id];
+    const isNew = !prev || prev.stars < stars;
+    const nc2 = __spreadValues({}, completed);
+    if (isNew) nc2[selectedMission.id] = { stars, coins: fe };
+    const gain = isNew ? fe : 0;
+    const nCoins = coins + gain;
+    const nte = totalEarnedEver + gain;
+    const newStreak = stars > 0 ? streak + 1 : 0;
+    let streakBonus = 0;
+    if (stars > 0 && newStreak > 0 && newStreak % 5 === 0) {
+      streakBonus = Math.floor(selectedMission.coins * 0.5);
+      sfx.streak();
+    }
+    if (stars > 0 && newStreak > 0 && newStreak % 10 === 0) streakBonus += Math.floor(selectedMission.coins * 1);
+    const finalCoins = nCoins + streakBonus;
+    setCompleted(nc2);
+    setCoins(finalCoins);
+    setTotalEarnedEver(nte + streakBonus);
+    setStreak(newStreak);
+    setActivePU(null);
+    if (stars === 3) {
+      setConfetti(true);
+      setTimeout(() => setConfetti(false), 2200);
+    }
+    const newTr = checkTr(nc2, owned, finalCoins, secretUnlocked, earnedTr, newStreak);
+    const wId = selectedMission.w;
+    const wm = M.filter((m) => m.w === wId);
+    const nowDone = wm.filter((m) => nc2[m.id]).length;
+    if (nowDone === 10 && (!prev || prev.stars < 1)) {
+      const story = WSTORIES.find((s) => s.w === wId);
+      if (story) setWorldStory(story);
+    }
+    setResult({ stars, earned: gain, streakBonus, newStreak, mission: selectedMission });
+    setScreen("result");
+    save(finalCoins, nc2, owned, puStock, skin, acc, secretUnlocked, newTr, newStreak, nte + streakBonus, (/* @__PURE__ */ new Date()).toDateString());
+  };
+  const buyItem = (item) => {
+    if (coins < item.price || owned.includes(item.id)) return;
+    sfx.buy();
+    const nc = coins - item.price;
+    const no = [...owned, item.id];
+    const np = item.cat === "pu" ? __spreadProps(__spreadValues({}, puStock), { [item.id]: (puStock[item.id] || 0) + item.uses }) : puStock;
+    setCoins(nc);
+    setOwned(no);
+    setPuStock(np);
+    const newTr = checkTr(completed, no, nc, secretUnlocked, earnedTr, streak);
+    save(nc, completed, no, np, skin, acc, secretUnlocked, newTr, streak, totalEarnedEver, (/* @__PURE__ */ new Date()).toDateString());
+  };
+  const equip = (item) => {
+    if (!owned.includes(item.id)) return;
+    if (item.cat === "skin") {
+      setSkin(item.skinKey);
+      save(coins, completed, owned, puStock, item.skinKey, acc, secretUnlocked, earnedTr, streak, totalEarnedEver, (/* @__PURE__ */ new Date()).toDateString());
+    }
+    if (item.cat === "acc") {
+      setAcc(item.accKey);
+      save(coins, completed, owned, puStock, skin, item.accKey, secretUnlocked, earnedTr, streak, totalEarnedEver, (/* @__PURE__ */ new Date()).toDateString());
+    }
+  };
+  const trySecret = () => {
+    if (secretInput.toUpperCase().trim() === "GIAGUARO" && !secretUnlocked) {
+      sfx.secret();
+      setSecretUnlocked(true);
+      const newTr = checkTr(completed, owned, coins, true, earnedTr, streak);
+      save(coins, completed, owned, puStock, skin, acc, true, newTr, streak, totalEarnedEver, (/* @__PURE__ */ new Date()).toDateString());
+    }
+  };
+  const TL = { heart: "\u{1F49C} Raccolta", memory: "\u{1F0CF} Memory", whack: "\u{1F44A} Whack", bubble: "\u{1FAE7} Bolle", simon: "\u{1F3B5} Simon", tap: "\u{1F446} Tap", sort: "\u{1F4E6} Smista", dodge: "\u{1F3C3} Corri" };
+  const getStars = (id) => {
+    var _a2;
+    return ((_a2 = completed[id]) == null ? void 0 : _a2.stars) || 0;
+  };
+  function GameComp({ m }) {
+    const props = { mission: m, skin, acc, onComplete: finishMission };
+    if (m.type === "heart") return /* @__PURE__ */ React.createElement(HeartCatcher, __spreadValues({}, props));
+    if (m.type === "memory") return /* @__PURE__ */ React.createElement(MemoryMatch, __spreadValues({}, props));
+    if (m.type === "whack") return /* @__PURE__ */ React.createElement(WhackBug, __spreadValues({}, props));
+    if (m.type === "bubble") return /* @__PURE__ */ React.createElement(BubblePop, __spreadValues({}, props));
+    if (m.type === "simon") return /* @__PURE__ */ React.createElement(SimonSays, __spreadValues({}, props));
+    if (m.type === "tap") return /* @__PURE__ */ React.createElement(QuickTap, __spreadValues({}, props));
+    if (m.type === "sort") return /* @__PURE__ */ React.createElement(SortGame, __spreadValues({}, props));
+    if (m.type === "dodge") return /* @__PURE__ */ React.createElement(DodgeRun, __spreadValues({}, props));
+    return null;
+  }
+  const TrophyToast = () => newTrophy ? /* @__PURE__ */ React.createElement("div", { style: { position: "fixed", top: 16, left: "50%", transform: "translateX(-50%)", background: `linear-gradient(135deg,${C.gold},${C.orange})`, borderRadius: 14, padding: "10px 20px", color: "#000", fontWeight: 800, zIndex: 1001, animation: "slideIn 0.4s ease", whiteSpace: "nowrap", boxShadow: "0 4px 20px rgba(0,0,0,0.5)" } }, newTrophy.emoji, " ", newTrophy.name, " sbloccato!") : null;
+  if (worldStory) return /* @__PURE__ */ React.createElement("div", { style: { minHeight: "100vh", background: C.bg, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 24, fontFamily: "'Nunito',sans-serif" } }, /* @__PURE__ */ React.createElement("style", null, CSS), /* @__PURE__ */ React.createElement("div", { style: { background: `linear-gradient(135deg,${C.card},${C.surface})`, borderRadius: 24, padding: 28, border: `2px solid ${C.pink}`, maxWidth: 360, width: "100%", animation: "slideIn 0.5s ease" } }, /* @__PURE__ */ React.createElement("div", { style: { textAlign: "center", fontSize: 44, marginBottom: 8 } }, "\u2728"), /* @__PURE__ */ React.createElement("div", { style: { color: C.pink, fontWeight: 900, fontSize: 18, textAlign: "center", marginBottom: 18 } }, worldStory.title), /* @__PURE__ */ React.createElement("div", { style: { color: C.white, fontSize: 15, lineHeight: 1.85, whiteSpace: "pre-line", textAlign: "center" } }, worldStory.text), /* @__PURE__ */ React.createElement("button", { onClick: () => setWorldStory(null), style: __spreadProps(__spreadValues({}, BS), { width: "100%", marginTop: 22, background: `linear-gradient(135deg,${C.pink},${C.purple})`, border: "none", padding: "13px", fontSize: 16 }) }, "Continua \u25B6")));
+  if (showTrophies) return /* @__PURE__ */ React.createElement("div", { style: { minHeight: "100vh", background: C.bg, padding: 16, fontFamily: "'Nunito',sans-serif" } }, /* @__PURE__ */ React.createElement("style", null, CSS), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", alignItems: "center", gap: 10, marginBottom: 16 } }, /* @__PURE__ */ React.createElement("button", { onClick: () => setShowTrophies(false), style: __spreadProps(__spreadValues({}, BS), { padding: "6px 12px" }) }, "\u2190"), /* @__PURE__ */ React.createElement("div", { style: { color: C.yellow, fontWeight: 800, fontSize: 18 } }, "\u{1F3C6} Trofei"), /* @__PURE__ */ React.createElement("div", { style: { marginLeft: "auto", color: C.soft, fontSize: 13 } }, earnedTr.length, "/", TROPH.length)), /* @__PURE__ */ React.createElement("div", { style: { background: C.card, borderRadius: 14, padding: "12px 16px", marginBottom: 14, border: `1px solid ${C.border}`, display: "flex", gap: 12, alignItems: "center" } }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 28 } }, "\u{1F525}"), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { style: { color: C.white, fontWeight: 700 } }, "Streak attuale: ", streak, " vittorie"), /* @__PURE__ */ React.createElement("div", { style: { color: C.soft, fontSize: 12 } }, "Ogni 5 vittorie di fila = bonus monete!"))), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 10 } }, TROPH.map((t) => {
+    const got = earnedTr.includes(t.id);
+    return /* @__PURE__ */ React.createElement("div", { key: t.id, style: { background: C.card, border: `2px solid ${got ? C.gold : C.border}`, borderRadius: 14, padding: "12px 16px", display: "flex", alignItems: "center", gap: 12, opacity: got ? 1 : 0.45 } }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 30 } }, got ? t.emoji : "\u{1F512}"), /* @__PURE__ */ React.createElement("div", { style: { flex: 1 } }, /* @__PURE__ */ React.createElement("div", { style: { color: got ? C.white : C.soft, fontWeight: 700, fontSize: 14 } }, got ? t.name : "???"), /* @__PURE__ */ React.createElement("div", { style: { color: C.soft, fontSize: 12 } }, got ? t.desc : "Trofeo segreto!")), got && /* @__PURE__ */ React.createElement("div", { style: { color: C.gold, fontSize: 18 } }, "\u2705"));
+  })));
+  if (screen === "welcome") {
+    return /* @__PURE__ */ React.createElement("div", { style: { minHeight: "100vh", background: C.bg, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 20, fontFamily: "'Nunito',sans-serif", position: "relative" } }, /* @__PURE__ */ React.createElement("style", null, CSS), /* @__PURE__ */ React.createElement(Confetti, { active: confetti }), /* @__PURE__ */ React.createElement(TrophyToast, null), dailyBonus && /* @__PURE__ */ React.createElement("div", { onClick: claimDaily, style: { position: "fixed", top: 60, left: "50%", transform: "translateX(-50%)", background: `linear-gradient(135deg,${C.green},${C.teal})`, borderRadius: 16, padding: "12px 24px", cursor: "pointer", zIndex: 100, animation: "glow 1.5s infinite", textAlign: "center", boxShadow: "0 4px 20px rgba(0,0,0,0.4)" } }, /* @__PURE__ */ React.createElement("div", { style: { color: "#000", fontWeight: 900, fontSize: 16 } }, "\u{1F381} Bonus giornaliero!"), /* @__PURE__ */ React.createElement("div", { style: { color: "#000", fontSize: 13 } }, "Tocca per ricevere +", dailyBonus.amount, " \u{1F4B0}")), /* @__PURE__ */ React.createElement("div", { style: { animation: "float 2.5s ease-in-out infinite", marginBottom: 8, marginTop: dailyBonus ? 70 : 0 } }, /* @__PURE__ */ React.createElement(Buffy, { size: 120, color: SK[skin], acc, mood: "excited" })), /* @__PURE__ */ React.createElement("div", { style: { color: C.pink, fontSize: 28, fontWeight: 900, textAlign: "center", marginBottom: 4, textShadow: `0 0 22px ${C.pink}88` } }, "Buffy Adventure"), /* @__PURE__ */ React.createElement("div", { style: { color: C.soft, fontSize: 15, textAlign: "center", marginBottom: 4 } }, "Un'avventura creata solo per te"), /* @__PURE__ */ React.createElement("div", { style: { color: C.yellow, fontSize: 24, marginBottom: 20, animation: "pulse 1.5s infinite" } }, "\u{1F49C} Rebecca \u{1F49C}"), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 10, marginBottom: 18, flexWrap: "wrap", justifyContent: "center" } }, [{ v: coins, l: "Monete", c: C.gold }, { v: `${totalStars}\u2B50`, l: "Stelle", c: C.yellow }, { v: `${total}/100`, l: "Missioni", c: C.green }, { v: `\u{1F525}${streak}`, l: "Streak", c: C.orange }].map((s, i) => /* @__PURE__ */ React.createElement("div", { key: i, style: { textAlign: "center", background: C.card, borderRadius: 14, padding: "10px 14px", border: `1px solid ${C.border}` } }, /* @__PURE__ */ React.createElement("div", { style: { color: s.c, fontSize: 18, fontWeight: 800 } }, s.v), /* @__PURE__ */ React.createElement("div", { style: { color: C.soft, fontSize: 11 } }, s.l)))), /* @__PURE__ */ React.createElement("button", { onClick: () => setScreen("worldmap"), style: { background: `linear-gradient(135deg,${C.pink},${C.purple})`, border: "none", borderRadius: 16, padding: "14px 40px", color: C.white, fontSize: 18, fontWeight: 800, cursor: "pointer", marginBottom: 10, animation: "glow 2s infinite" } }, "\u{1F5FA}\uFE0F Gioca!"), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 8, marginBottom: 12 } }, /* @__PURE__ */ React.createElement("button", { onClick: () => setScreen("shop"), style: __spreadProps(__spreadValues({}, BS), { padding: "10px 18px" }) }, "\u{1F6CD}\uFE0F Negozio"), /* @__PURE__ */ React.createElement("button", { onClick: () => setShowTrophies(true), style: __spreadProps(__spreadValues({}, BS), { padding: "10px 18px" }) }, "\u{1F3C6} Trofei")), !secretUnlocked ? /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 6, marginTop: 4 } }, /* @__PURE__ */ React.createElement("input", { value: secretInput, onChange: (e) => setSecretInput(e.target.value), onKeyDown: (e) => e.key === "Enter" && trySecret(), placeholder: "Codice segreto... \u{1F510}", style: { background: C.card, border: `1px solid ${C.border}`, borderRadius: 10, padding: "8px 12px", color: C.white, fontSize: 13, width: 170, outline: "none", fontFamily: "'Nunito',sans-serif" } }), /* @__PURE__ */ React.createElement("button", { onClick: trySecret, style: __spreadProps(__spreadValues({}, BS), { padding: "8px 12px" }) }, "\u2713")) : /* @__PURE__ */ React.createElement("div", { style: { color: C.teal, fontSize: 14, fontWeight: 700, marginTop: 4, animation: "shimmer 2s infinite" } }, "\u{1F406} GIAGUARO sbloccato! Corro chiamami giaguarooo!"));
+  }
+  if (screen === "worldmap") return /* @__PURE__ */ React.createElement("div", { style: { minHeight: "100vh", background: C.bg, padding: 16, fontFamily: "'Nunito',sans-serif" } }, /* @__PURE__ */ React.createElement("style", null, CSS), /* @__PURE__ */ React.createElement(TrophyToast, null), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", alignItems: "center", gap: 10, marginBottom: 16 } }, /* @__PURE__ */ React.createElement("button", { onClick: () => setScreen("welcome"), style: __spreadProps(__spreadValues({}, BS), { padding: "6px 12px" }) }, "\u2190"), /* @__PURE__ */ React.createElement("div", { style: { color: C.white, fontWeight: 800, fontSize: 18 } }, "\u{1F5FA}\uFE0F Mappa dei Mondi"), /* @__PURE__ */ React.createElement("div", { style: { marginLeft: "auto", color: C.gold, fontWeight: 700 } }, "\u{1F4B0} ", coins)), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 10 } }, WORLDS.map((w) => {
+    const unlocked = wUnlocked(w.id);
+    const wm = M.filter((m) => m.w === w.id);
+    const done = wm.filter((m) => completed[m.id]).length;
+    const ws = wm.reduce((s, m) => {
+      var _a2;
+      return s + (((_a2 = completed[m.id]) == null ? void 0 : _a2.stars) || 0);
+    }, 0);
+    return /* @__PURE__ */ React.createElement("div", { key: w.id, onClick: () => unlocked && (setSelectedWorld(w.id), setScreen("missionmap")), style: { background: unlocked ? C.card : C.surface, border: `2px solid ${unlocked ? w.color : C.border}`, borderRadius: 16, padding: "13px 16px", cursor: unlocked ? "pointer" : "not-allowed", display: "flex", alignItems: "center", gap: 12, opacity: unlocked ? 1 : 0.5, transition: "all 0.2s" } }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 34 } }, w.emoji), /* @__PURE__ */ React.createElement("div", { style: { flex: 1 } }, /* @__PURE__ */ React.createElement("div", { style: { color: unlocked ? C.white : C.soft, fontWeight: 800, fontSize: 14 } }, w.name), /* @__PURE__ */ React.createElement("div", { style: { color: C.soft, fontSize: 12, marginTop: 2 } }, done, "/10 missioni ", ws > 0 && `\u2022 ${"\u2B50".repeat(Math.min(ws, 5))}${ws > 5 ? `+${ws - 5}` : ""}`), done === 10 && /* @__PURE__ */ React.createElement("div", { style: { color: C.green, fontSize: 11, marginTop: 2 } }, "\u2705 Completato!")), !unlocked ? /* @__PURE__ */ React.createElement("div", { style: { color: C.soft, fontSize: 11, textAlign: "right" } }, "\u{1F512}", /* @__PURE__ */ React.createElement("br", null), w.unlock, " miss.") : /* @__PURE__ */ React.createElement("div", { style: { color: w.color, fontSize: 20 } }, "\u25B6"));
+  })));
+  if (screen === "missionmap") {
+    const wm = M.filter((m) => m.w === selectedWorld);
+    const world = WORLDS.find((w) => w.id === selectedWorld);
+    return /* @__PURE__ */ React.createElement("div", { style: { minHeight: "100vh", background: C.bg, padding: 16, fontFamily: "'Nunito',sans-serif" } }, /* @__PURE__ */ React.createElement("style", null, CSS), /* @__PURE__ */ React.createElement(TrophyToast, null), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", alignItems: "center", gap: 10, marginBottom: 14 } }, /* @__PURE__ */ React.createElement("button", { onClick: () => setScreen("worldmap"), style: __spreadProps(__spreadValues({}, BS), { padding: "6px 12px" }) }, "\u2190"), /* @__PURE__ */ React.createElement("div", { style: { color: world.color, fontWeight: 800, fontSize: 15 } }, world.emoji, " ", world.name), /* @__PURE__ */ React.createElement("div", { style: { marginLeft: "auto", color: C.gold, fontWeight: 700 } }, "\u{1F4B0} ", coins)), streak >= 3 && /* @__PURE__ */ React.createElement("div", { style: { background: `${C.orange}22`, border: `1px solid ${C.orange}`, borderRadius: 10, padding: "6px 12px", marginBottom: 10, color: C.orange, fontSize: 13, fontWeight: 700, textAlign: "center" } }, "\u{1F525} Streak ", streak, "! Ogni 5 vittorie = bonus monete!"), /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 } }, wm.map((m, i) => {
+      var _a2;
+      const s = getStars(m.id);
+      const canPlay = i === 0 || !!completed[(_a2 = wm[i - 1]) == null ? void 0 : _a2.id];
+      return /* @__PURE__ */ React.createElement("div", { key: m.id, onClick: () => canPlay && startMission(m), style: { background: canPlay ? C.card : C.surface, border: `2px solid ${canPlay ? world.color + "88" : C.border}`, borderRadius: 14, padding: 12, cursor: canPlay ? "pointer" : "not-allowed", opacity: canPlay ? 1 : 0.5, transition: "all 0.2s" } }, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 4 } }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 22 } }, m.emoji), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 11, color: C.soft } }, "#", m.id)), /* @__PURE__ */ React.createElement("div", { style: { color: C.white, fontWeight: 700, fontSize: 13, marginBottom: 2 } }, m.name), /* @__PURE__ */ React.createElement("div", { style: { color: C.soft, fontSize: 11, marginBottom: 4 } }, TL[m.type]), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", justifyContent: "space-between", alignItems: "center" } }, /* @__PURE__ */ React.createElement("div", { style: { color: C.yellow, fontSize: 12 } }, s > 0 ? "\u2B50".repeat(s) + "\u2606".repeat(3 - s) : canPlay ? "\u2606\u2606\u2606" : "\u{1F512}"), /* @__PURE__ */ React.createElement("div", { style: { color: C.gold, fontSize: 11, fontWeight: 700 } }, "+", m.coins, "\u{1F4B0}")), /* @__PURE__ */ React.createElement("div", { style: { color: m.diff >= 4 ? C.red : m.diff >= 3 ? C.orange : C.soft, fontSize: 10, marginTop: 2 } }, "\u{1F31F}".repeat(m.diff)));
+    })));
+  }
+  if (screen === "playing" && selectedMission) return /* @__PURE__ */ React.createElement("div", { style: { minHeight: "100vh", background: C.bg, padding: 14, fontFamily: "'Nunito',sans-serif" } }, /* @__PURE__ */ React.createElement("style", null, CSS), /* @__PURE__ */ React.createElement(Confetti, { active: confetti }), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", alignItems: "center", gap: 10, marginBottom: 10 } }, /* @__PURE__ */ React.createElement("button", { onClick: () => {
+    setScreen("missionmap");
+  }, style: __spreadProps(__spreadValues({}, BS), { padding: "6px 12px" }) }, "\u2715"), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { style: { color: C.white, fontWeight: 800, fontSize: 14 } }, selectedMission.emoji, " ", selectedMission.name), /* @__PURE__ */ React.createElement("div", { style: { color: C.soft, fontSize: 12 } }, TL[selectedMission.type])), /* @__PURE__ */ React.createElement("div", { style: { marginLeft: "auto", display: "flex", gap: 6, alignItems: "center" } }, streak >= 3 && /* @__PURE__ */ React.createElement("div", { style: { color: C.orange, fontSize: 12, fontWeight: 700 } }, "\u{1F525}", streak), /* @__PURE__ */ React.createElement("div", { style: { color: C.gold, fontSize: 12, fontWeight: 700 } }, "+", selectedMission.coins, "\u{1F4B0}"))), /* @__PURE__ */ React.createElement("div", { style: { background: C.card, borderRadius: 12, padding: "8px 14px", marginBottom: 10, borderLeft: `3px solid ${C.pink}` } }, /* @__PURE__ */ React.createElement("div", { style: { color: C.soft, fontSize: 13, fontStyle: "italic" } }, '"', selectedMission.story, '"')), activePU && /* @__PURE__ */ React.createElement("div", { style: { background: `${C.yellow}22`, border: `1px solid ${C.yellow}`, borderRadius: 8, padding: "5px 12px", marginBottom: 8, color: C.yellow, fontSize: 12, textAlign: "center" } }, "\u26A1 Power-up: ", (_a = SHOP.find((i) => i.id === activePU)) == null ? void 0 : _a.name), /* @__PURE__ */ React.createElement(GameComp, { m: selectedMission }));
+  if (screen === "result" && result) return /* @__PURE__ */ React.createElement("div", { style: { minHeight: "100vh", background: C.bg, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 20, fontFamily: "'Nunito',sans-serif" } }, /* @__PURE__ */ React.createElement("style", null, CSS), /* @__PURE__ */ React.createElement(Confetti, { active: result.stars === 3 }), /* @__PURE__ */ React.createElement(TrophyToast, null), /* @__PURE__ */ React.createElement("div", { style: { animation: "float 2s infinite" } }, /* @__PURE__ */ React.createElement(Buffy, { size: 90, color: SK[skin], acc, mood: result.stars > 0 ? "excited" : "sad" })), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 52, margin: "12px 0" } }, result.stars === 3 ? "\u{1F3C6}" : result.stars === 2 ? "\u{1F948}" : result.stars === 1 ? "\u{1F949}" : "\u{1F49C}"), /* @__PURE__ */ React.createElement("div", { style: { color: result.stars > 0 ? C.yellow : C.red, fontSize: 22, fontWeight: 900, marginBottom: 6 } }, result.stars > 0 ? "Brava! " + "\u2B50".repeat(result.stars) : "Riprova!"), result.earned > 0 && /* @__PURE__ */ React.createElement("div", { style: { color: C.gold, fontSize: 20, fontWeight: 800, marginBottom: 2 } }, "+", result.earned, " \u{1F4B0}"), result.streakBonus > 0 && /* @__PURE__ */ React.createElement("div", { style: { color: C.orange, fontSize: 16, fontWeight: 800, marginBottom: 2 } }, "\u{1F525} Streak bonus +", result.streakBonus, " \u{1F4B0}"), result.stars > 0 && result.newStreak > 0 && /* @__PURE__ */ React.createElement("div", { style: { color: C.orange, fontSize: 14, marginBottom: 4 } }, "\u{1F525} Streak: ", result.newStreak, " vittorie di fila!"), /* @__PURE__ */ React.createElement("div", { style: { color: C.soft, fontSize: 14, marginBottom: 22 } }, "Totale: ", coins, " monete"), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 12 } }, /* @__PURE__ */ React.createElement("button", { onClick: () => {
+    setScreen("playing");
+    setResult(null);
+  }, style: { background: `linear-gradient(135deg,${C.pink},${C.purple})`, border: "none", borderRadius: 14, padding: "12px 22px", color: C.white, fontWeight: 800, cursor: "pointer", fontSize: 15 } }, "\u{1F504} Riprova"), /* @__PURE__ */ React.createElement("button", { onClick: () => {
+    setScreen("missionmap");
+  }, style: __spreadProps(__spreadValues({}, BS), { padding: "12px 20px", fontSize: 15 }) }, "\u{1F5FA}\uFE0F Mappa"), result.stars > 0 && /* @__PURE__ */ React.createElement("button", { onClick: function() { var idx = M.findIndex(function(m2) { return m2.id === selectedMission.id; }); var next = M[idx + 1]; if (next) { startMission(next); } else { setScreen("missionmap"); } }, style: { background: "linear-gradient(135deg,#9B59B6,#6C3483)", border: "none", borderRadius: 14, padding: "12px 22px", color: "#fff", fontWeight: 800, cursor: "pointer", fontSize: 15 } }, "\u25B6 Continua")), /* @__PURE__ */ React.createElement("button", { onClick: () => setScreen("shop"), style: __spreadProps(__spreadValues({}, BS), { padding: "10px 20px", marginTop: 10, fontSize: 13 }) }, "\u{1F6CD}\uFE0F Negozio (", coins, "\u{1F4B0})"));
+  if (screen === "shop") {
+    const tabs = ["skin", "acc", "pu", "msg"];
+    const tabL = { skin: "\u{1F457} Skin", acc: "\u{1F380} Acc", pu: "\u26A1 PU", msg: "\u{1F48C} Lettere" };
+    if (readMsg) return /* @__PURE__ */ React.createElement("div", { style: { minHeight: "100vh", background: C.bg, padding: 20, fontFamily: "'Nunito',sans-serif", display: "flex", flexDirection: "column" } }, /* @__PURE__ */ React.createElement("style", null, CSS), /* @__PURE__ */ React.createElement("button", { onClick: () => setReadMsg(null), style: __spreadProps(__spreadValues({}, BS), { alignSelf: "flex-start", marginBottom: 16 }) }, "\u2190 Torna"), /* @__PURE__ */ React.createElement("div", { style: { background: `linear-gradient(135deg,${C.card},${C.surface})`, borderRadius: 20, padding: 24, border: `2px solid ${C.pink}`, flex: 1, animation: "slideIn 0.4s ease" } }, /* @__PURE__ */ React.createElement("div", { style: { color: C.pink, fontWeight: 900, fontSize: 18, marginBottom: 20, textAlign: "center" } }, readMsg.title), /* @__PURE__ */ React.createElement("div", { style: { color: C.white, fontSize: 15, lineHeight: 1.85, whiteSpace: "pre-wrap" } }, readMsg.body), /* @__PURE__ */ React.createElement("div", { style: { textAlign: "center", marginTop: 24, fontSize: 36 } }, "\u{1F49C}")));
+    return /* @__PURE__ */ React.createElement("div", { style: { minHeight: "100vh", background: C.bg, padding: 16, fontFamily: "'Nunito',sans-serif" } }, /* @__PURE__ */ React.createElement("style", null, CSS), /* @__PURE__ */ React.createElement(TrophyToast, null), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", alignItems: "center", gap: 10, marginBottom: 14 } }, /* @__PURE__ */ React.createElement("button", { onClick: () => setScreen("welcome"), style: __spreadProps(__spreadValues({}, BS), { padding: "6px 12px" }) }, "\u2190"), /* @__PURE__ */ React.createElement("div", { style: { color: C.white, fontWeight: 800, fontSize: 18 } }, "\u{1F6CD}\uFE0F Negozio"), /* @__PURE__ */ React.createElement("div", { style: { marginLeft: "auto", background: `${C.gold}22`, border: `1px solid ${C.gold}`, borderRadius: 10, padding: "4px 12px", color: C.gold, fontWeight: 800 } }, "\u{1F4B0} ", coins)), /* @__PURE__ */ React.createElement("div", { style: { background: C.card, borderRadius: 16, padding: 14, marginBottom: 14, display: "flex", alignItems: "center", gap: 12, border: `1px solid ${C.border}` } }, /* @__PURE__ */ React.createElement(Buffy, { size: 66, color: SK[skin], acc, mood: "happy" }), /* @__PURE__ */ React.createElement("div", { style: { flex: 1 } }, /* @__PURE__ */ React.createElement("div", { style: { color: C.white, fontWeight: 700 } }, "La tua Buffy \u{1F49C}"), /* @__PURE__ */ React.createElement("div", { style: { color: C.soft, fontSize: 12 } }, "Skin: ", ((_b = SHOP.find((i) => i.skinKey === skin)) == null ? void 0 : _b.name) || "Rosa"), /* @__PURE__ */ React.createElement("div", { style: { color: C.soft, fontSize: 12 } }, "Acc: ", acc === "none" ? "Nessuno" : ((_c = SHOP.find((i) => i.accKey === acc)) == null ? void 0 : _c.name) || acc)), secretUnlocked && /* @__PURE__ */ React.createElement("div", { style: { color: C.teal, fontSize: 22, animation: "shimmer 2s infinite" } }, "\u{1F406}")), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 5, marginBottom: 14 } }, tabs.map((t) => /* @__PURE__ */ React.createElement("button", { key: t, onClick: () => setShopTab(t), style: __spreadProps(__spreadValues({ flex: 1 }, BS), { padding: "8px 4px", fontSize: 12, background: shopTab === t ? C.pink + "44" : C.card, border: `1px solid ${shopTab === t ? C.pink : C.border}` }) }, tabL[t]))), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 10 } }, SHOP.filter((i) => i.cat === shopTab).map((item) => {
+      const isOwned = owned.includes(item.id);
+      const canAfford = coins >= item.price;
+      const isEq = item.cat === "skin" && skin === item.skinKey || item.cat === "acc" && acc === item.accKey;
+      const stock = puStock[item.id] || 0;
+      const msgData = item.msgKey ? MSGS[item.msgKey] : null;
+      return /* @__PURE__ */ React.createElement("div", { key: item.id, style: { background: C.card, border: `2px solid ${isEq ? C.pink : isOwned ? C.green + "66" : C.border}`, borderRadius: 14, padding: 14, display: "flex", alignItems: "center", gap: 12 } }, /* @__PURE__ */ React.createElement("div", { style: { fontSize: 30 } }, item.emoji), /* @__PURE__ */ React.createElement("div", { style: { flex: 1 } }, /* @__PURE__ */ React.createElement("div", { style: { color: C.white, fontWeight: 700, fontSize: 14 } }, item.name), /* @__PURE__ */ React.createElement("div", { style: { color: C.soft, fontSize: 12 } }, item.desc), item.cat === "pu" && isOwned && /* @__PURE__ */ React.createElement("div", { style: { color: C.yellow, fontSize: 12 } }, "Scorta: ", stock, "x")), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 6, alignItems: "flex-end" } }, item.price > 0 && !isOwned && /* @__PURE__ */ React.createElement("div", { style: { color: canAfford ? C.gold : C.red, fontWeight: 700, fontSize: 13 } }, item.price, "\u{1F4B0}"), item.price === 0 || isOwned ? item.cat === "msg" ? /* @__PURE__ */ React.createElement("button", { onClick: () => setReadMsg(msgData), style: __spreadProps(__spreadValues({}, BS), { background: `${C.pink}44`, borderColor: C.pink, fontSize: 12, padding: "6px 12px" }) }, "\u{1F4D6} Leggi") : item.cat === "pu" ? /* @__PURE__ */ React.createElement("button", { onClick: () => {
+        if (stock > 0) {
+          const np = __spreadProps(__spreadValues({}, puStock), { [item.id]: stock - 1 });
+          setPuStock(np);
+          setActivePU(item.id);
+          save(coins, completed, owned, np, skin, acc, secretUnlocked, earnedTr, streak, totalEarnedEver, (/* @__PURE__ */ new Date()).toDateString());
+          setScreen("missionmap");
+        }
+      }, disabled: stock <= 0, style: __spreadProps(__spreadValues({}, BS), { background: stock > 0 ? `${C.yellow}33` : C.surface, borderColor: stock > 0 ? C.yellow : C.border, fontSize: 12, padding: "6px 12px", opacity: stock > 0 ? 1 : 0.5 }) }, "\u26A1 Usa") : /* @__PURE__ */ React.createElement("button", { onClick: () => equip(item), style: __spreadProps(__spreadValues({}, BS), { background: isEq ? `${C.green}44` : C.surface, borderColor: isEq ? C.green : C.border, fontSize: 12, padding: "6px 12px" }) }, isEq ? "\u2705 On" : "\u{1F457} Equipa") : /* @__PURE__ */ React.createElement("button", { onClick: () => buyItem(item), disabled: !canAfford, style: __spreadProps(__spreadValues({}, BS), { background: canAfford ? `${C.gold}33` : C.surface, borderColor: canAfford ? C.gold : C.border, opacity: canAfford ? 1 : 0.5, fontSize: 12, padding: "6px 12px" }) }, "\u{1F6D2} Compra")));
+    })));
+  }
+  return null;
+}
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(React.createElement(App));
+
+  </script>
+</body>
+</html>
